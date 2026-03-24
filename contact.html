@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth bg-[var(--color-brand-bg)] text-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect - Intelegencia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/output.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="font-inter antialiased overflow-x-hidden relative">
+  <div class="noise-bg"></div>
+
+  <nav class="fixed w-full z-50 top-0 px-6 py-6 flex justify-between items-center dark:mix-blend-difference pointer-events-auto border-b border-white/5 bg-[var(--color-brand-bg)]/20 backdrop-blur-sm">
+    <div class="hoverable">
+      <a href="index.html" class="font-space text-xl font-bold tracking-widest uppercase">INT<span class="text-white/50">L</span></a>
+    </div>
+    <div class="hidden lg:flex space-x-8 font-space text-xs tracking-[0.2em] items-center text-white/50">
+      <a href="services.html" class="hoverable transition-colors hover:text-white">SERVICES</a>
+      <a href="portfolio.html" class="hoverable transition-colors hover:text-white">WORK</a>
+      <a href="about.html" class="hoverable transition-colors hover:text-white">STORY</a>
+      <a href="#" class="hoverable transition-colors hover:text-white">CASE STUDIES</a>
+    </div>
+    <div class="hoverable flex items-center space-x-4">
+      <a href="contact.html" class="font-space text-xs border border-white/20 rounded-full px-6 py-3 bg-white text-black hover:bg-transparent hover:text-white transition-all duration-300 uppercase tracking-widest">Connect</a>
+      <button id="themeToggle" class="w-11 h-11 rounded-full border border-white/20 flex justify-center items-center overflow-hidden relative transition-colors cursor-none hoverable group">
+        <svg class="w-5 h-5 text-white absolute transition-all duration-500 transform scale-0 rotate-90 dark:scale-100 dark:rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+        <svg class="w-6 h-6 text-white absolute transition-all duration-500 transform scale-100 rotate-0 dark:scale-0 dark:-rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="min-h-screen pt-32 pb-24 flex items-center">
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-8 w-full">
+       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 items-center">
+          
+          <div class="text-reveal-block opacity-0">
+             <h1 class="font-space text-5xl md:text-[6rem] font-bold uppercase tracking-tighter dark:mix-blend-difference leading-[0.9] mb-8">
+               Start<br/>The<br/>Dialogue<span class="text-[var(--color-brand-pink)]">.</span>
+             </h1>
+             <p class="font-inter text-xl text-white/50 max-w-md mt-12">
+               Enterprises evolve through conversation. Reach out to our engineers and strategists located in Noida and across the globe.
+             </p>
+             
+             <div class="mt-16 space-y-6 flex flex-col font-space tracking-widest uppercase text-sm">
+                <div>
+                  <span class="text-[var(--color-brand-pink)] block mb-1">HQ / NOIDA</span>
+                  <a href="#" class="hoverable text-white/80 hover:text-white transition-colors text-lg">INDIA, ASIA</a>
+                </div>
+                <div>
+                  <span class="text-[var(--color-brand-purple)] block mb-1">EMAIL</span>
+                  <a href="mailto:hello@intelegencia.com" class="hoverable text-white/80 hover:text-white transition-colors text-lg">hello@intelegencia.com</a>
+                </div>
+             </div>
+          </div>
+
+          <div class="text-reveal-block opacity-0 relative overflow-hidden p-8 rounded-3xl border border-white/10 glass bg-[var(--color-brand-surface)]/50">
+             <form class="space-y-12">
+                <div class="relative">
+                   <input type="text" id="name" class="block w-full border-0 border-b border-white/20 bg-transparent py-4 font-space text-xl text-white focus:border-white focus:ring-0 transition-colors peer hoverable placeholder-transparent" placeholder="Name" required>
+                   <label for="name" class="cursor-text absolute left-0 top-4 font-space text-sm tracking-widest text-white/40 uppercase transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-white">Your Name</label>
+                </div>
+                
+                <div class="relative">
+                   <input type="email" id="email" class="block w-full border-0 border-b border-white/20 bg-transparent py-4 font-space text-xl text-white focus:border-white focus:ring-0 transition-colors peer hoverable placeholder-transparent" placeholder="Email" required>
+                   <label for="email" class="cursor-text absolute left-0 top-4 font-space text-sm tracking-widest text-white/40 uppercase transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-white">Email Address</label>
+                </div>
+                
+                <div class="relative">
+                   <textarea id="message" rows="4" class="block w-full border-0 border-b border-white/20 bg-transparent py-4 font-space text-xl text-white focus:border-white focus:ring-0 transition-colors peer hoverable placeholder-transparent resize-none" placeholder="Message" required></textarea>
+                   <label for="message" class="cursor-text absolute left-0 top-4 font-space text-sm tracking-widest text-white/40 uppercase transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-white">Project Details</label>
+                </div>
+
+                <div class="pt-8">
+                   <button type="submit" class="hoverable font-space flex items-center gap-4 text-xl uppercase tracking-widest text-white hover:text-[var(--color-brand-pink)] transition-colors group">
+                      Send Transmission 
+                      <span class="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center group-hover:border-[var(--color-brand-pink)] transition-all">
+                        <svg class="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                      </span>
+                   </button>
+                </div>
+             </form>
+          </div>
+
+       </div>
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

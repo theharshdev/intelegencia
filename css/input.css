@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: var(--theme-bg);
+  --color-brand-surface: var(--theme-surface);
+  --color-white: var(--theme-white);
+  --color-black: var(--theme-black);
+  
+  --color-brand-purple: #9D4EDD;
+  --color-brand-pink: #FF006E;
+  --color-brand-blue: #3A86FF;
+  
+  --font-space: "Space Grotesk", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  :root { 
+    /* Light Mode */
+    color-scheme: light;
+    --theme-bg: #f8f9fa;
+    --theme-surface: #ffffff;
+    --theme-white: #0a0a0a;  /* Core utilities like text-white invert to dark */
+    --theme-black: #ffffff;  /* Core utilities like bg-black invert to light */
+  }
+  
+  :root.dark { 
+    /* Dark Mode Defaults */
+    color-scheme: dark;
+    --theme-bg: #070707;
+    --theme-surface: #111111;
+    --theme-white: #ffffff;
+    --theme-black: #0a0a0a;
+  }
+}
+
+@custom-variant dark (&:is(.dark *));
+
+/* Custom Utility Classes for Artistic Effects */
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-[var(--color-brand-purple)] via-[var(--color-brand-pink)] to-[var(--color-brand-blue)] bg-clip-text text-transparent;
+}
+
+/* Noise overlay */
+.noise-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Custom Cursor */
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--theme-white);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+}
+
+.dark .custom-cursor {
+  mix-blend-mode: difference;
+}
+
+.custom-cursor.hover {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid var(--theme-white);
+}
+
+/* Hide scrollbar for a cleaner aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg); 
+}
+::-webkit-scrollbar-thumb {
+  background: #333; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

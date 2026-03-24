@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth bg-[var(--color-brand-bg)] text-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Intelegencia</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/output.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="font-inter antialiased overflow-x-hidden relative">
+
+  <div class="noise-bg"></div>
+
+  <!-- Abstract Minimal Navbar -->
+  <nav class="fixed w-full z-50 top-0 px-6 py-6 flex justify-between items-center dark:mix-blend-difference pointer-events-auto border-b border-white/5 bg-[var(--color-brand-bg)]/20 backdrop-blur-sm">
+    <div class="hoverable">
+      <a href="index.html" class="font-space text-xl font-bold tracking-widest uppercase">INT<span class="text-white/50">L</span></a>
+    </div>
+    <div class="hidden lg:flex space-x-8 font-space text-xs tracking-[0.2em] items-center text-white/50">
+      <a href="services.html" class="hoverable transition-colors hover:text-white">SERVICES</a>
+      <a href="portfolio.html" class="hoverable transition-colors hover:text-white">WORK</a>
+      <a href="about.html" class="hoverable transition-colors hover:text-white">STORY</a>
+      <a href="#" class="hoverable transition-colors hover:text-white">CASE STUDIES</a>
+    </div>
+    <div class="hoverable flex items-center space-x-4">
+      <a href="contact.html" class="font-space text-xs border border-white/20 rounded-full px-6 py-3 bg-white text-black hover:bg-transparent hover:text-white transition-all duration-300 uppercase tracking-widest">Connect</a>
+      <button id="themeToggle" class="w-11 h-11 rounded-full border border-white/20 flex justify-center items-center overflow-hidden relative transition-colors cursor-none hoverable group">
+        <svg class="w-5 h-5 text-white absolute transition-all duration-500 transform scale-0 rotate-90 dark:scale-100 dark:rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+        <svg class="w-6 h-6 text-white absolute transition-all duration-500 transform scale-100 rotate-0 dark:scale-0 dark:-rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+      </button>
+    </div>
+  </nav>
+
+  
+
+<main class="min-h-screen pt-32 pb-24 relative z-10 w-full overflow-hidden">
+<!-- Enhanced Hero Section -->
+  <section class="relative min-h-[70vh] flex flex-col justify-center max-w-[1400px] mx-auto px-4 sm:px-8 mb-32 service-category">
+     <!-- Decorative Background Glowing Orbs -->
+     <div class="absolute top-10 right-10 w-[40vw] h-[40vw] bg-[var(--color-brand-purple)]/10 rounded-full blur-[140px] pointer-events-none -z-10 mix-blend-screen transition-all duration-[30s] animate-pulse"></div>
+     <div class="absolute bottom-10 left-10 w-[30vw] h-[30vw] bg-[var(--color-brand-pink)]/10 rounded-full blur-[120px] pointer-events-none -z-10 mix-blend-screen transition-all duration-[20s] animate-pulse"></div>
+
+     <div class="relative z-10 text-reveal-block">
+        <!-- Minimal Status Badge -->
+        <div class="inline-flex items-center gap-3 border border-white/20 rounded-full px-6 py-2 mb-10 section-heading opacity-0 bg-white/5 backdrop-blur-md shadow-lg shadow-[var(--color-brand-purple)]/10">
+            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-pink)] animate-ping relative before:absolute before:inset-0 before:bg-[var(--color-brand-pink)] before:rounded-full before:animate-ping"></span>
+            <span class="font-space text-[10px] tracking-[0.4em] uppercase text-white/80">Services & Solutions</span>
+        </div>
+
+        <h1 class="font-space text-6xl md:text-[9rem] font-bold uppercase tracking-tighter dark:mix-blend-difference leading-[0.85] section-heading opacity-0 group">
+          Digital<br/>Capabilities<span class="text-[var(--color-brand-purple)] group-hover:text-[var(--color-brand-pink)] transition-colors duration-700">.</span>
+        </h1>
+        
+        <div class="mt-16 flex flex-col md:flex-row md:items-end justify-between gap-12 section-heading opacity-0 border-t border-white/10 pt-12">
+            <p class="font-inter text-xl md:text-3xl text-white/50 max-w-3xl leading-relaxed">
+                Engineering <strong class="text-white font-normal">hyper-scalable architectures</strong>, accelerating customer channels, and mathematically optimizing world-class brand operations.
+            </p>
+            
+            <!-- Abstract Architecture Indicator -->
+            <div class="flex items-center gap-6 hidden md:flex">
+                <div class="flex flex-col gap-2 uppercase font-space text-[10px] tracking-[0.2em] text-white/30 text-right">
+                    <span>Active Deployment</span>
+                    <span class="text-[var(--color-brand-purple)] font-bold">Global Nodes</span>
+                </div>
+                <div class="w-16 h-16 border border-white/20 rounded-full flex items-center justify-center rotate-45 text-[var(--color-brand-pink)] text-2xl hover:bg-white/10 hover:scale-110 transition-all cursor-pointer">
+                    &rarr;
+                </div>
+            </div>
+        </div>
+     </div>
+  </section>
+
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-8 mb-32 service-category">
+        <div class="border-b border-white/20 pb-6 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6 section-heading opacity-0 group">
+            <div class="flex items-center gap-6">
+                <span class="font-space font-bold text-xl md:text-3xl text-[var(--color-brand-purple)] border border-[var(--color-brand-purple)] rounded-full px-6 py-2">01</span>
+                <h2 class="font-space text-3xl md:text-6xl uppercase tracking-tighter text-white">Application & Engineering</h2>
+            </div>
+            <div class="font-space text-[10px] tracking-widest text-[var(--color-brand-purple)] uppercase opacity-50 group-hover:opacity-100 transition-opacity hidden md:block">
+               Capability Index &darr;
+            </div>
+        </div>
+        
+        <div class="flex flex-col mb-20">
+    
+           <a href="#app-services" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-purple)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-purple)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-purple)] group-hover:border-[var(--color-brand-purple)]/50 group-hover:bg-[var(--color-brand-purple)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-purple)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-purple)] transition-colors text-white/90">Application Services</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Build scalable, secure applications tailored to business limits.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-purple)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-purple)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#prod-dev" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-purple)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-purple)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-purple)] group-hover:border-[var(--color-brand-purple)]/50 group-hover:bg-[var(--color-brand-purple)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-purple)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-purple)] transition-colors text-white/90">Product Development</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">End-to-end product development from idea to deployment.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-purple)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-purple)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#mfg-analytics" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-purple)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-purple)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-purple)] group-hover:border-[var(--color-brand-purple)]/50 group-hover:bg-[var(--color-brand-purple)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-purple)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-purple)] transition-colors text-white/90">Manufacturing Analytics</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Data-driven insights to optimize manufacturing operations.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-purple)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-purple)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#cloud-devops" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-purple)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-purple)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-purple)] group-hover:border-[var(--color-brand-purple)]/50 group-hover:bg-[var(--color-brand-purple)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-purple)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-purple)] transition-colors text-white/90">Cloud & DevOps</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Cloud infrastructure setup, CI/CD pipelines, and DevOps automation.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-purple)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-purple)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#qa" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-purple)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-purple)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-purple)] group-hover:border-[var(--color-brand-purple)]/50 group-hover:bg-[var(--color-brand-purple)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-purple)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-purple)] transition-colors text-white/90">Quality Assurance</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Manual and automated testing to ensure product reliability.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-purple)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-purple)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#data-analytics" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-purple)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-purple)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-purple)] group-hover:border-[var(--color-brand-purple)]/50 group-hover:bg-[var(--color-brand-purple)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-purple)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-purple)] transition-colors text-white/90">Data & Analytics</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Data processing, visualization, and BI solutions.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-purple)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-purple)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#digital-infra" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-purple)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-purple)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-purple)] group-hover:border-[var(--color-brand-purple)]/50 group-hover:bg-[var(--color-brand-purple)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-purple)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-purple)] transition-colors text-white/90">Digital Infrastructure</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">IT infrastructure management, monitoring, and support.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-purple)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-purple)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#netsuite" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-purple)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-purple)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-purple)] group-hover:border-[var(--color-brand-purple)]/50 group-hover:bg-[var(--color-brand-purple)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-purple)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-purple)] transition-colors text-white/90">NetSuite Services</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">ERP implementation and customization using NetSuite.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-purple)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-purple)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#salesforce" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-purple)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-purple)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-purple)] group-hover:border-[var(--color-brand-purple)]/50 group-hover:bg-[var(--color-brand-purple)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-purple)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354l8 4.5v6.292l-8 4.5-8-4.5V8.854l8-4.5z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-purple)] transition-colors text-white/90">Salesforce Services</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">CRM solutions, integrations, and automation using Salesforce.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-purple)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-purple)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#servicenow" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-purple)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-purple)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-purple)] group-hover:border-[var(--color-brand-purple)]/50 group-hover:bg-[var(--color-brand-purple)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-purple)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-purple)] transition-colors text-white/90">ServiceNow Services</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">ITSM solutions and workflow automation using ServiceNow.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-purple)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-purple)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        </div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 border-t border-white/5 pt-16">
+           <div id="app-services" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-purple)] shadow-[0_0_10px_var(--color-brand-purple)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Application Services</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-purple)] transition-colors duration-300">Our application services focus on building highly scalable, secure, and performant software tailored to your specific enterprise requirements. We utilize modern cloud-native architectures to ensure your digital products can handle high traffic and complex workflows without compromising speed or security.</p>
+           </div>
+        
+           <div id="prod-dev" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-purple)] shadow-[0_0_10px_var(--color-brand-purple)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Product Development</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-purple)] transition-colors duration-300">From initial ideation and wireframing to full-scale deployment and post-launch maintenance, we provide comprehensive end-to-end product development. Our agile methodologies guarantee rapid iteration, aligning technology precisely with your business objectives and user needs.</p>
+           </div>
+        
+           <div id="mfg-analytics" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-purple)] shadow-[0_0_10px_var(--color-brand-purple)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Manufacturing Analytics</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-purple)] transition-colors duration-300">We deploy advanced IIoT and data analytics pipelines directly onto your factory floors. Our algorithms analyze machine telemetry and production data in real-time, enabling predictive maintenance, reducing downtime, and drastically optimizing overall manufacturing efficiency.</p>
+           </div>
+        
+           <div id="cloud-devops" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-purple)] shadow-[0_0_10px_var(--color-brand-purple)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Cloud & DevOps</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-purple)] transition-colors duration-300">Accelerate your development cycle and ensure absolute platform stability with our Cloud and DevOps engineering. We design rigorous CI/CD pipelines, automated testing regimens, and scalable Kubernetes architectures that eliminate deployment friction.</p>
+           </div>
+        
+           <div id="qa" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-purple)] shadow-[0_0_10px_var(--color-brand-purple)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Quality Assurance</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-purple)] transition-colors duration-300">Our Quality Assurance engineers employ a blend of deep manual inspection and comprehensive automated test suites to fortify your software. We catch edge cases, performance bottlenecks, and security vulnerabilities long before they reach your customers.</p>
+           </div>
+        
+           <div id="data-analytics" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-purple)] shadow-[0_0_10px_var(--color-brand-purple)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Data & Analytics</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-purple)] transition-colors duration-300">Transform raw data streams into actionable business intelligence. We construct robust data lakes, real-time processing pipelines, and beautiful visualization dashboards that allow your executive team to make precise, data-backed decisions.</p>
+           </div>
+        
+           <div id="digital-infra" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-purple)] shadow-[0_0_10px_var(--color-brand-purple)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Digital Infrastructure</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-purple)] transition-colors duration-300">Maintain continuous uptime and high performance across your entire digital ecosystem. We provide 24/7 proactive infrastructure management, network monitoring, and rapid-response support to keep your operations running seamlessly.</p>
+           </div>
+        
+           <div id="netsuite" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-purple)] shadow-[0_0_10px_var(--color-brand-purple)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">NetSuite Services</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-purple)] transition-colors duration-300">Unify your business financials, operations, and customer relations with expert NetSuite ERP implementations. We customize workflows, integrate third-party APIs, and train your staff to maximize the value of your NetSuite investment.</p>
+           </div>
+        
+           <div id="salesforce" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-purple)] shadow-[0_0_10px_var(--color-brand-purple)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Salesforce Services</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-purple)] transition-colors duration-300">Supercharge your sales and support teams with bespoke Salesforce architecture. We specialize in custom Apex development, deep third-party ecosystem integrations, and intelligent workflow automation to drive revenue and retention.</p>
+           </div>
+        
+           <div id="servicenow" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-purple)] shadow-[0_0_10px_var(--color-brand-purple)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">ServiceNow Services</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-purple)] transition-colors duration-300">Modernize your IT service management with comprehensive ServiceNow integrations. We map your internal processes to automated digital workflows, radically reducing IT resolution times and improving overall employee satisfaction.</p>
+           </div>
+        </div></section>
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-8 mb-32 service-category">
+        <div class="border-b border-white/20 pb-6 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6 section-heading opacity-0 group">
+            <div class="flex items-center gap-6">
+                <span class="font-space font-bold text-xl md:text-3xl text-[var(--color-brand-pink)] border border-[var(--color-brand-pink)] rounded-full px-6 py-2">02</span>
+                <h2 class="font-space text-3xl md:text-6xl uppercase tracking-tighter text-white">Customer Service & BPO</h2>
+            </div>
+            <div class="font-space text-[10px] tracking-widest text-[var(--color-brand-pink)] uppercase opacity-50 group-hover:opacity-100 transition-opacity hidden md:block">
+               Capability Index &darr;
+            </div>
+        </div>
+        
+        <div class="flex flex-col mb-20">
+    
+           <a href="#customer-support" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-pink)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-pink)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-pink)] group-hover:border-[var(--color-brand-pink)]/50 group-hover:bg-[var(--color-brand-pink)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-pink)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-pink)] transition-colors text-white/90">Customer Support</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">24/7 support solutions to enhance customer satisfaction.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-pink)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-pink)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#telemarketing" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-pink)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-pink)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-pink)] group-hover:border-[var(--color-brand-pink)]/50 group-hover:bg-[var(--color-brand-pink)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-pink)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-pink)] transition-colors text-white/90">Telemarketing</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Lead generation and outbound communication strategies.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-pink)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-pink)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#training" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-pink)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-pink)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-pink)] group-hover:border-[var(--color-brand-pink)]/50 group-hover:bg-[var(--color-brand-pink)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-pink)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-pink)] transition-colors text-white/90">Training & Quality</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Training programs and quality monitoring for support teams.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-pink)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-pink)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#ecommerce" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-pink)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-pink)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-pink)] group-hover:border-[var(--color-brand-pink)]/50 group-hover:bg-[var(--color-brand-pink)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-pink)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-pink)] transition-colors text-white/90">E-commerce Services</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Order management, customer support, and backend operations.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-pink)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-pink)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#data-entry" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-pink)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-pink)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-pink)] group-hover:border-[var(--color-brand-pink)]/50 group-hover:bg-[var(--color-brand-pink)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-pink)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-pink)] transition-colors text-white/90">Data Entry & VA</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Efficient data handling and administrative support.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-pink)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-pink)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#finance" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-pink)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-pink)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-pink)] group-hover:border-[var(--color-brand-pink)]/50 group-hover:bg-[var(--color-brand-pink)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-pink)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-pink)] transition-colors text-white/90">Finance & Accounting</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Bookkeeping, invoicing, and financial reporting.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-pink)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-pink)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#healthcare" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-pink)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-pink)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-pink)] group-hover:border-[var(--color-brand-pink)]/50 group-hover:bg-[var(--color-brand-pink)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-pink)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-pink)] transition-colors text-white/90">Healthcare Services</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Healthcare BPO, medical billing, and data management.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-pink)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-pink)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#legal" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-pink)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-pink)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-pink)] group-hover:border-[var(--color-brand-pink)]/50 group-hover:bg-[var(--color-brand-pink)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-pink)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-pink)] transition-colors text-white/90">Legal Services</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Legal process outsourcing and documentation support.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-pink)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-pink)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#hr" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-pink)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-pink)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-pink)] group-hover:border-[var(--color-brand-pink)]/50 group-hover:bg-[var(--color-brand-pink)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-pink)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-pink)] transition-colors text-white/90">HR Services</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Recruitment, payroll, and HR management solutions.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-pink)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-pink)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        </div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 border-t border-white/5 pt-16">
+           <div id="customer-support" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-pink)] shadow-[0_0_10px_var(--color-brand-pink)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Customer Support</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-pink)] transition-colors duration-300">Deliver exceptional, round-the-clock customer experiences with our dedicated support teams. We blend AI-assisted triage with empathetic human agents to resolve issues instantly, turning customer frustrations into brand loyalty.</p>
+           </div>
+        
+           <div id="telemarketing" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-pink)] shadow-[0_0_10px_var(--color-brand-pink)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Telemarketing</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-pink)] transition-colors duration-300">Drive explosive growth with our targeted outbound communication and lead generation strategies. Our highly trained representatives act as an extension of your sales force, qualifying leads and setting up high-value conversions.</p>
+           </div>
+        
+           <div id="training" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-pink)] shadow-[0_0_10px_var(--color-brand-pink)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Training & Quality</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-pink)] transition-colors duration-300">Ensure every customer interaction meets your exact brand standards. Our Quality teams monitor calls, chat logs, and support tickets, providing continuous coaching and training programs that elevate your entire BPO workforce.</p>
+           </div>
+        
+           <div id="ecommerce" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-pink)] shadow-[0_0_10px_var(--color-brand-pink)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">E-commerce Services</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-pink)] transition-colors duration-300">Streamline your digital retail operations from cart to delivery. We handle order processing, inventory synching, fraud prevention, and post-purchase customer inquiries so you can focus entirely on merchandising and growth.</p>
+           </div>
+        
+           <div id="data-entry" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-pink)] shadow-[0_0_10px_var(--color-brand-pink)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Data Entry & VA</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-pink)] transition-colors duration-300">Offload repetitive, time-consuming administrative tasks to our highly accurate virtual assistants. We manage bulk data processing, scheduling, research, and documentation with uncompromising precision and confidentiality.</p>
+           </div>
+        
+           <div id="finance" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-pink)] shadow-[0_0_10px_var(--color-brand-pink)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Finance & Accounting</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-pink)] transition-colors duration-300">Maintain crystal-clear financial health with our outsourced accounting services. Our certified professionals handle daily bookkeeping, complex invoicing, payroll processing, and comprehensive monthly financial reporting.</p>
+           </div>
+        
+           <div id="healthcare" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-pink)] shadow-[0_0_10px_var(--color-brand-pink)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Healthcare Services</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-pink)] transition-colors duration-300">Navigate the complexities of medical administration with strict compliance. We specialize in HIPAA-compliant medical billing, claims processing, patient scheduling, and secure health data management.</p>
+           </div>
+        
+           <div id="legal" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-pink)] shadow-[0_0_10px_var(--color-brand-pink)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Legal Services</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-pink)] transition-colors duration-300">Accelerate your legal workflows with specialized administrative support. Our teams assist with meticulous document review, contract abstraction, compliance monitoring, and continuous legal research.</p>
+           </div>
+        
+           <div id="hr" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-pink)] shadow-[0_0_10px_var(--color-brand-pink)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">HR Services</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-pink)] transition-colors duration-300">Scale your workforce effortlessly. We manage end-to-end recruitment drives, global payroll execution, employee onboarding, and benefits administration, acting as a seamless extension of your internal HR department.</p>
+           </div>
+        </div></section>
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-8 mb-32 service-category">
+        <div class="border-b border-white/20 pb-6 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6 section-heading opacity-0 group">
+            <div class="flex items-center gap-6">
+                <span class="font-space font-bold text-xl md:text-3xl text-[var(--color-brand-blue)] border border-[var(--color-brand-blue)] rounded-full px-6 py-2">03</span>
+                <h2 class="font-space text-3xl md:text-6xl uppercase tracking-tighter text-white">Digital Marketing</h2>
+            </div>
+            <div class="font-space text-[10px] tracking-widest text-[var(--color-brand-blue)] uppercase opacity-50 group-hover:opacity-100 transition-opacity hidden md:block">
+               Capability Index &darr;
+            </div>
+        </div>
+        
+        <div class="flex flex-col mb-20">
+    
+           <a href="#digital-ad" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-blue)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-blue)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-blue)] group-hover:border-[var(--color-brand-blue)]/50 group-hover:bg-[var(--color-brand-blue)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-blue)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-blue)] transition-colors text-white/90">Digital Advertising</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Paid campaigns across Google, Meta, and platforms.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-blue)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-blue)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#seo" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-blue)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-blue)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-blue)] group-hover:border-[var(--color-brand-blue)]/50 group-hover:bg-[var(--color-brand-blue)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-blue)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-blue)] transition-colors text-white/90">Findability & SEO</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Search engine optimization to improve online visibility.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-blue)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-blue)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#design" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-blue)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-blue)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-blue)] group-hover:border-[var(--color-brand-blue)]/50 group-hover:bg-[var(--color-brand-blue)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-blue)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-blue)] transition-colors text-white/90">Web & App Design</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">UI/UX design for websites and mobile applications.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-blue)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-blue)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#ecomm-opt" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-blue)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-blue)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-blue)] group-hover:border-[var(--color-brand-blue)]/50 group-hover:bg-[var(--color-brand-blue)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-blue)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-blue)] transition-colors text-white/90">E-comm Optimization</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Optimizing product listings for better conversions.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-blue)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-blue)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#community" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-blue)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-blue)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-blue)] group-hover:border-[var(--color-brand-blue)]/50 group-hover:bg-[var(--color-brand-blue)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-blue)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-blue)] transition-colors text-white/90">Community Mgmt</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Managing brand presence across social platforms.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-blue)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-blue)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#cro" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-blue)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-blue)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-blue)] group-hover:border-[var(--color-brand-blue)]/50 group-hover:bg-[var(--color-brand-blue)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-blue)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-blue)] transition-colors text-white/90">Conversion (CRO)</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Improving website performance and user conversion.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-blue)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-blue)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#marketing-data" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-blue)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-blue)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-blue)] group-hover:border-[var(--color-brand-blue)]/50 group-hover:bg-[var(--color-brand-blue)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-blue)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-blue)] transition-colors text-white/90">Data Analytics</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Marketing data tracking and performance optimization.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-blue)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-blue)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#brand-comms" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-blue)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-blue)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-blue)] group-hover:border-[var(--color-brand-blue)]/50 group-hover:bg-[var(--color-brand-blue)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-blue)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-blue)] transition-colors text-white/90">Brand Comms</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Building consistent and impactful brand messaging.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-blue)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-blue)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        
+           <a href="#content-strat" class="service-row group border-b border-white/10 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/5 transition-all duration-500 px-6 relative overflow-hidden outline-none opacity-0 transform translate-y-8">
+               
+               <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-[var(--color-brand-blue)] group-hover:h-full transition-all duration-300 z-10"></div>
+               <div class="absolute right-0 top-0 w-[40vw] h-full bg-[var(--color-brand-blue)]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10 mix-blend-screen pulse"></div>
+
+               <div class="flex items-center gap-6 md:w-5/12 relative z-10">
+                  <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:text-[var(--color-brand-blue)] group-hover:border-[var(--color-brand-blue)]/50 group-hover:bg-[var(--color-brand-blue)]/10 transition-all duration-500 shrink-0 shadow-lg shadow-black/20 group-hover:shadow-[var(--color-brand-blue)]/20">
+                      <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                  </div>
+                  <h3 class="font-space text-2xl md:text-4xl uppercase font-bold tracking-tighter group-hover:text-[var(--color-brand-blue)] transition-colors text-white/90">Content Strategy</h3>
+               </div>
+
+               <div class="md:w-5/12 relative z-10">
+                  <p class="font-inter text-white/50 text-sm md:text-base leading-relaxed group-hover:text-white transition-colors">Content planning, creation, and distribution strategies.</p>
+               </div>
+
+               <div class="md:w-2/12 flex justify-start md:justify-end items-center gap-4 relative z-10">
+                  <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-blue)] uppercase hidden lg:block font-bold">Specs</span>
+                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[var(--color-brand-blue)] group-hover:border-transparent group-hover:text-[var(--color-brand-bg)] transition-all duration-500 text-white/50 bg-[var(--color-brand-bg)]">
+                      <svg class="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </div>
+               </div>
+           </a>
+        </div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 border-t border-white/5 pt-16">
+           <div id="digital-ad" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-blue)] shadow-[0_0_10px_var(--color-brand-blue)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Digital Advertising</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-blue)] transition-colors duration-300">Maximize your return on ad spend with hyper-targeted paid media campaigns. We mathematically optimize bidding strategies across Google, LinkedIn, Meta, and programmatic networks to drive high-converting traffic at the lowest cost.</p>
+           </div>
+        
+           <div id="seo" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-blue)] shadow-[0_0_10px_var(--color-brand-blue)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Findability & SEO</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-blue)] transition-colors duration-300">Dominate the search rankings and drastically increase your organic traffic footprint. We execute deep technical SEO audits, high-authority link-building, and semantic content mapping to secure the top spots on Google.</p>
+           </div>
+        
+           <div id="design" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-blue)] shadow-[0_0_10px_var(--color-brand-blue)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Web & App Design</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-blue)] transition-colors duration-300">Capture attention and drive action with stunning, intuitive interface design. Our UI/UX architects craft frictionless digital journeys, blending breathtaking esthetics with psychological conversion principles for maximum impact.</p>
+           </div>
+        
+           <div id="ecomm-opt" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-blue)] shadow-[0_0_10px_var(--color-brand-blue)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">E-comm Optimization</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-blue)] transition-colors duration-300">Turn browsers into buyers. We forensically analyze your e-commerce funnels, optimizing product descriptions, enhancing A+ imagery, and adjusting checkout flows to squeeze every drop of conversion rate potential from your traffic.</p>
+           </div>
+        
+           <div id="community" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-blue)] shadow-[0_0_10px_var(--color-brand-blue)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Community Mgmt</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-blue)] transition-colors duration-300">Build a fiercely loyal tribe around your brand. We proactively manage your social channels, sparking engaging conversations, addressing customer feedback instantly, and curating a vibrant digital culture that resonates with your audience.</p>
+           </div>
+        
+           <div id="cro" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-blue)] shadow-[0_0_10px_var(--color-brand-blue)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Conversion (CRO)</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-blue)] transition-colors duration-300">Stop leaving money on the table. Through relentless A/B testing, heat-mapping analysis, and behavioral tracking, we scientifically re-engineer your landing pages to convert a significantly higher percentage of your existing visitors.</p>
+           </div>
+        
+           <div id="marketing-data" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-blue)] shadow-[0_0_10px_var(--color-brand-blue)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Data Analytics</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-blue)] transition-colors duration-300">Eliminate guesswork with crystalline marketing attribution. We implement advanced tracking pixels, server-side tagging, and custom dashboards that perfectly map user journeys from first touch to final purchase.</p>
+           </div>
+        
+           <div id="brand-comms" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-blue)] shadow-[0_0_10px_var(--color-brand-blue)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Brand Comms</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-blue)] transition-colors duration-300">Establish an unforgettable industry presence. We refine your brand voice, orchestrate high-impact PR campaigns, and develop compelling corporate narratives that deeply position you as the definitive leader in your sector.</p>
+           </div>
+        
+           <div id="content-strat" class="pt-24 -mt-24 mb-6 flex flex-col items-start">
+               <div class="flex items-center gap-3 mb-4">
+                  <div class="w-2 h-2 rounded-full bg-[var(--color-brand-blue)] shadow-[0_0_10px_var(--color-brand-blue)]"></div>
+                  <h4 class="font-space text-sm font-bold text-white tracking-[0.2em] uppercase">Content Strategy</h4>
+               </div>
+               <p class="font-inter text-white/40 text-sm leading-relaxed border-l border-white/10 pl-4 py-1 hover:border-[var(--color-brand-blue)] transition-colors duration-300">Fuel your growth engine with high-value content. We architect comprehensive editorial calendars, producing authoritative articles, whitepapers, and engaging video scripts designed to educate, entertain, and magnetically attract leads.</p>
+           </div>
+        </div></section>
+  
+    <!-- Reviews / Testimonials -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-8 mb-32 py-24 border-t border-white/10 relative overflow-hidden service-category">
+        <!-- Abstract gradient mask -->
+        <div class="absolute top-0 right-0 w-[50vw] h-[50vw] bg-[var(--color-brand-blue)]/5 rounded-full blur-[150px] pointer-events-none -z-10 mix-blend-screen"></div>
+
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 section-heading opacity-0">
+            <div>
+                <span class="font-space text-[10px] tracking-[0.3em] uppercase text-[var(--color-brand-blue)] mb-4 block font-bold">Client Verification</span>
+                <h2 class="font-space text-4xl md:text-6xl uppercase tracking-tighter text-white">Global Partners<span class="text-[var(--color-brand-blue)]">.</span></h2>
+            </div>
+            <p class="font-inter text-white/50 max-w-md text-sm md:text-base mt-6 md:mt-0 leading-relaxed">
+                Trusted by industry leaders across fintech, healthcare, and global logistics to architect highly resilient digital ecosystems.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Review 1 -->
+            <div class="border border-white/10 bg-[var(--color-brand-bg)] p-10 relative group hover:-translate-y-2 transition-transform duration-500 service-row opacity-0 rounded-2xl overflow-hidden backdrop-blur-sm">
+                <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+                <svg class="w-8 h-8 text-[var(--color-brand-blue)] mb-6 opacity-50 block" fill="currentColor" viewBox="0 0 32 32"><path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.896 3.456-8.352 9.12-8.352 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"></path></svg>
+                <p class="font-inter text-white/80 leading-relaxed mb-8 text-lg relative z-10 w-full break-words">"The architectural precision and uncompromising stability built into their infrastructure literally redefined our global transaction velocity. Absolutely unparalleled engineering."</p>
+                <div class="border-t border-white/10 pt-6 relative z-10">
+                    <h4 class="font-space font-bold uppercase tracking-tight text-white mb-1">Elias Vance</h4>
+                    <span class="font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-blue)] uppercase block">CTO, Horizon Financial</span>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="border border-white/10 bg-[var(--color-brand-bg)] p-10 relative group hover:-translate-y-2 transition-transform duration-500 service-row opacity-0 rounded-2xl overflow-hidden backdrop-blur-sm mt-0 md:mt-12">
+                <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+                <svg class="w-8 h-8 text-[var(--color-brand-purple)] mb-6 opacity-50 block" fill="currentColor" viewBox="0 0 32 32"><path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.896 3.456-8.352 9.12-8.352 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"></path></svg>
+                <p class="font-inter text-white/80 leading-relaxed mb-8 text-lg relative z-10 w-full break-words">"We migrated our entire BPO and customer service architecture over to Intelegencia. The difference in operational intelligence and response time was frankly staggering."</p>
+                <div class="border-t border-white/10 pt-6 relative z-10">
+                    <h4 class="font-space font-bold uppercase tracking-tight text-white mb-1">Sarah Chen</h4>
+                    <span class="font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-purple)] uppercase block">Director of Ops, Lumina Matrix</span>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="border border-white/10 bg-[var(--color-brand-bg)] p-10 relative group hover:-translate-y-2 transition-transform duration-500 service-row opacity-0 rounded-2xl overflow-hidden backdrop-blur-sm mt-0 md:mt-24">
+                <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+                <svg class="w-8 h-8 text-[var(--color-brand-pink)] mb-6 opacity-50 block" fill="currentColor" viewBox="0 0 32 32"><path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.896 3.456-8.352 9.12-8.352 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"></path></svg>
+                <p class="font-inter text-white/80 leading-relaxed mb-8 text-lg relative z-10 w-full break-words">"Their marketing data analytics blew apart all of our previous conversion benchmarks. Highly analytical, utterly professional, and driven absolutely by cold, hard metrics."</p>
+                <div class="border-t border-white/10 pt-6 relative z-10">
+                    <h4 class="font-space font-bold uppercase tracking-tight text-white mb-1">Marcus Thorne</h4>
+                    <span class="font-space text-[10px] tracking-[0.2em] text-[var(--color-brand-pink)] uppercase block">VP Marketing, Nexus</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Epic Call to Action -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-8 mb-40 service-category">
+        <div class="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-md overflow-hidden p-12 md:p-24 flex flex-col items-center text-center group section-heading opacity-0">
+            <!-- Pulse Backgrounds -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[var(--color-brand-purple)]/10 to-transparent pointer-events-none -z-10"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[var(--color-brand-pink)]/10 blur-[120px] rounded-full pointer-events-none group-hover:scale-150 transition-transform duration-[3s] -z-10"></div>
+            
+            <span class="w-16 h-16 border border-white/10 rounded-full flex items-center justify-center mb-8 bg-white/5 group-hover:bg-white group-hover:text-black transition-all duration-500 relative z-10">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </span>
+            <h2 class="font-space text-5xl md:text-8xl uppercase tracking-tighter font-bold text-white mb-6 relative z-10 leading-[0.9]">Ready to <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-brand-purple)] to-[var(--color-brand-pink)] block md:inline">Initiate?</span></h2>
+            <p class="font-inter text-white/50 max-w-xl mb-12 relative z-10 text-sm md:text-lg">Partner with our engineering teams to architect world-class digital logic required to globally scale your enterprise.</p>
+            
+            <a href="contact.html" class="relative z-10 inline-flex items-center gap-4 bg-white text-black font-space tracking-widest uppercase text-xs md:text-sm px-10 py-5 rounded-full hover:bg-transparent hover:text-white border border-transparent hover:border-white transition-all hover:scale-105 duration-300">
+               Initialize Project &rarr;
+            </a>
+
+            <!-- Abstract grid -->
+            <div class="absolute inset-0 pointer-events-none opacity-[0.03] -z-10 mix-blend-overlay" style="background-image: linear-gradient(var(--color-white) 1px, transparent 1px), linear-gradient(90deg, var(--color-white) 1px, transparent 1px); background-size: 50px 50px;"></div>
+        </div>
+    </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof gsap === 'undefined') return;
+
+      document.querySelectorAll('.service-row').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href')?.substring(1);
+            if (!targetId) return;
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                const yOffset = -120; 
+                const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({top: y, behavior: 'smooth'});
+                gsap.fromTo(targetElement, { opacity: 0.2, x: -20 }, { opacity: 1, x: 0, duration: 1.5, ease: "power3.out" });
+            }
+        });
+      });
+
+      gsap.utils.toArray('.service-category').forEach(sec => {
+        gsap.to(sec.querySelectorAll('.section-heading'), {
+          y: 0, opacity: 1, duration: 1, stagger: 0.1, ease: 'power3.out', scrollTrigger: { trigger: sec, start: 'top 85%' }
+        });
+        gsap.to(sec.querySelectorAll('.service-row'), {
+          y: 0, opacity: 1, duration: 0.8, stagger: 0.08, ease: 'power3.out', scrollTrigger: { trigger: sec, start: 'top 80%' }
+        });
+      });
+    });
+  </script>
+</main>
+
+
+
+
+  <!-- Footer Preview -->
+  <footer class="py-24 px-4 sm:px-8 border-t border-white/10 relative z-20 bg-[var(--color-brand-bg)] overflow-hidden mt-16">
+  <!-- Giant Background text -->
+  <div class="absolute top-0 left-0 w-full overflow-hidden opacity-5 pointer-events-none select-none flex justify-center">
+    <span class="font-space font-bold text-[15vw] leading-none whitespace-nowrap">INTELEGENCIA</span>
+  </div>
+  
+  <div class="max-w-[1400px] mx-auto relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-24">
+      
+      <!-- Locations Column (Left) -->
+      <div class="lg:col-span-4">
+        <a href="index.html" class="font-space text-3xl font-bold tracking-widest uppercase block mb-6">INTELEGENCIA<span class="text-[var(--color-brand-pink)]">.</span></a>
+        <p class="font-inter text-white/50 text-sm mb-12 uppercase tracking-widest max-w-[200px]">Delivering Excellence Across the Globe</p>
+        
+        <div class="space-y-8 font-inter text-sm text-white/60">
+          <div>
+            <h4 class="text-white font-space uppercase tracking-widest text-xs mb-3 border-b border-white/10 pb-2 inline-block w-full">U.S.A.</h4>
+            <p>PH 40 West Evergreen Ave,<br/>Suite 101A, Philadelphia, PA 19118</p>
+          </div>
+          <div>
+            <h4 class="text-white font-space uppercase tracking-widest text-xs mb-3 border-b border-white/10 pb-2 inline-block w-full">INDIA</h4>
+            <p class="mb-4">A-21, Lohia Rd, A Block, Sector 63,<br/>Noida, Uttar Pradesh 201301</p>
+            <p>KTC Illumination, First Floor, Gafoor Nagar,<br/>Madhapur, Hyderabad, Telangana 500081</p>
+          </div>
+          <div>
+            <h4 class="text-white font-space uppercase tracking-widest text-xs mb-3 border-b border-white/10 pb-2 inline-block w-full">PHILIPPINES</h4>
+            <p class="mb-3">OTC Building, Sumulong Highway,<br/>Antipolo City, Rizal 1870</p>
+            <p class="mb-3">ECC Building, Matatalaib,<br/>Tarlac City, Philippines 2300</p>
+            <p>Exquadra Tower, Jade drive,<br/>Ortigas, Pasig City, 1603</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Links Grid (Right) -->
+      <div class="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Company</h4>
+          <ul class="space-y-3 font-inter text-sm text-white/50">
+            <li><a href="index.html" class="hover:text-white transition-colors hoverable">Home</a></li>
+            <li><a href="#" class="hover:text-white transition-colors hoverable">Blogs</a></li>
+            <li><a href="#" class="hover:text-white transition-colors hoverable">Case Studies</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors hoverable">Services</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors hoverable">About Intelegencia</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">About Us</h4>
+          <ul class="space-y-3 font-inter text-sm text-white/50">
+            <li><a href="about.html" class="hover:text-white transition-colors hoverable">Our Story</a></li>
+            <li><a href="#" class="hover:text-white transition-colors hoverable">Our Location</a></li>
+            <li><a href="#" class="hover:text-white transition-colors hoverable">Our Leadership</a></li>
+            <li><a href="#" class="hover:text-white transition-colors hoverable">News & Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Explore</h4>
+          <ul class="space-y-3 font-inter text-sm text-white/50">
+            <li><a href="#" class="hover:text-white transition-colors hoverable">Career</a></li>
+            <li><a href="#" class="hover:text-white transition-colors hoverable">Our Culture</a></li>
+            <li><a href="#" class="hover:text-white transition-colors hoverable">Current Opening</a></li>
+            <li><a href="#" class="hover:text-white transition-colors hoverable">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Engagement</h4>
+          <ul class="space-y-3 font-inter text-sm text-white/50 leading-relaxed">
+            <li><a href="services.html" class="hover:text-white transition-colors hoverable">App & Engineering</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors hoverable">Digital Marketing</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors hoverable">Customer Service & BPO</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors hoverable">Legal</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom Footer -->
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-white/30 text-xs font-space tracking-widest uppercase">
+       <p>© 2025 INTELEGENCIA TECHNOLOGIES CORPORATION. ALL RIGHTS RESERVED.</p>
+       <div class="flex space-x-6 mt-4 md:mt-0 items-center">
+          <a href="#" class="hoverable hover:text-white transition-colors">TWITTER</a>
+          <a href="#" class="hoverable hover:text-white transition-colors">LINKEDIN</a>
+          <a href="#" class="hoverable hover:text-white transition-colors">FACEBOOK</a>
+          <a href="#" class="hoverable hover:text-white transition-colors">INSTAGRAM</a>
+       </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
