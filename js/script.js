@@ -161,6 +161,21 @@ function initGSAPTextReveals() {
     );
   });
 
+  // Card reveal animations
+  const cards = document.querySelectorAll('.card-reveal');
+  cards.forEach(card => {
+    gsap.fromTo(card,
+      { y: 50, opacity: 0 },
+      {
+        y: 0, opacity: 1, duration: 1, ease: "power3.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%"
+        }
+      }
+    );
+  });
+
   // Marquee Animation
   const marquees = document.querySelectorAll('.marquee-content');
   marquees.forEach(marquee => {

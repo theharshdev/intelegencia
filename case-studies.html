@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth bg-[var(--color-brand-bg)] text-white">
+<html lang="en" class="dark scroll-smooth bg-brand-bg text-white">
 
 <head>
     <meta charset="UTF-8">
@@ -19,11 +19,9 @@
     <div class="noise-bg"></div>
 
     <!-- Abstract Minimal Navbar -->
-    <nav
-        class="fixed w-full z-50 top-0 px-6 py-6 flex justify-between items-center dark:mix-blend-difference pointer-events-auto border-b border-white/5 bg-[var(--color-brand-bg)]/20 backdrop-blur-sm">
+    <nav class="fixed w-full z-50 top-0 px-6 py-6 flex justify-between items-center dark:mix-blend-difference pointer-events-auto border-b border-white/5 bg-brand-bg/20 backdrop-blur-md">
         <div class="hoverable">
-            <a href="index.html" class="font-space text-xl font-bold tracking-widest uppercase">INT<span
-                    class="text-white/50">L</span></a>
+            <a href="index.html" class="font-space text-xl font-bold tracking-widest uppercase">INT<span class="text-white/50">L</span></a>
         </div>
         <div class="hidden lg:flex space-x-8 font-space text-xs tracking-[0.2em] items-center text-white/50">
             <a href="services.html" class="hoverable transition-colors hover:text-white">SERVICES</a>
@@ -32,22 +30,10 @@
             <a href="case-studies.html" class="hoverable transition-colors hover:text-white text-white">CASE STUDIES</a>
         </div>
         <div class="hoverable flex items-center space-x-4">
-            <a href="contact.html"
-                class="font-space text-xs border border-white/20 rounded-full px-6 py-3 bg-white text-black hover:bg-transparent hover:text-white transition-all duration-300 uppercase tracking-widest">Connect</a>
-            <button id="themeToggle"
-                class="w-11 h-11 rounded-full border border-white/20 flex justify-center items-center overflow-hidden relative transition-colors cursor-none hoverable group">
-                <svg class="w-5 h-5 text-white absolute transition-all duration-500 transform scale-0 rotate-90 dark:scale-100 dark:rotate-0"
-                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
-                    </path>
-                </svg>
-                <svg class="w-6 h-6 text-white absolute transition-all duration-500 transform scale-100 rotate-0 dark:scale-0 dark:-rotate-90"
-                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
-                    </path>
-                </svg>
+            <a href="contact.html" class="font-space text-xs border border-white/20 rounded-full px-6 py-3 bg-white text-black hover:bg-transparent hover:text-white transition-all duration-300 uppercase tracking-widest">Connect</a>
+            <button id="themeToggle" class="w-11 h-11 rounded-full border border-white/20 flex justify-center items-center overflow-hidden relative transition-colors hoverable group">
+                <svg class="w-5 h-5 text-white absolute transition-all duration-500 transform scale-0 rotate-90 dark:scale-100 dark:rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                <svg class="w-6 h-6 text-white absolute transition-all duration-500 transform scale-100 rotate-0 dark:scale-0 dark:-rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
             </button>
         </div>
     </nav>
@@ -76,7 +62,7 @@
                         class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-pink opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-pink"></span>
                 </span>
-                <span class="font-space text-[10px] tracking-[0.3em] uppercase text-white/90">Success Narratives /
+                <span class="font-space text-[10px] tracking-widest uppercase text-white/90">Success Narratives /
                     Archive 2025</span>
             </div>
 
@@ -109,7 +95,7 @@
             <!-- Scroll Indicator -->
             <div
                 class="absolute -bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 py-8 opacity-0 hero-reveal">
-                <span class="font-space text-sm tracking-[0.4em] uppercase text-white/30 tracking-widest">Explore Impact</span>
+                <span class="font-space text-sm tracking-widest uppercase text-white/30">Explore Impact</span>
                 <div class="w-px h-16 bg-linear-to-b from-white/30 to-transparent"></div>
             </div>
         </section>
@@ -119,7 +105,7 @@
 
             <!-- Featured Study -->
             <div
-                class="group relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/2 backdrop-blur-sm card-reveal opacity-0 translate-y-12">
+                class="group relative overflow-hidden rounded-4xl border border-white/10 bg-white/2 backdrop-blur-sm card-reveal opacity-0 translate-y-12">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 lg:min-h-[600px]">
                     <div class="lg:col-span-7 relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
@@ -146,7 +132,7 @@
                         </div>
 
                         <span
-                            class="font-space text-brand-pink text-[10px] tracking-[0.4em] uppercase mb-6 block font-bold">Featured
+                            class="font-space text-brand-pink text-[10px] tracking-widest uppercase mb-6 block font-bold">Featured
                             / Data Engineering</span>
                         <h2
                             class="font-space text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-8 leading-[0.9]">
@@ -189,11 +175,11 @@
                 <!-- Case Item 2 -->
                 <div class="group relative card-reveal opacity-0 translate-y-8">
                     <div
-                        class="absolute inset-0 bg-linear-to-b from-white/5 to-transparent rounded-[2rem] -z-10 group-hover:from-brand-blue/10 transition-colors duration-700">
+                        class="absolute inset-0 bg-linear-to-b from-white/5 to-transparent rounded-4xl -z-10 group-hover:from-brand-blue/10 transition-colors duration-700">
                     </div>
                     <div
-                        class="relative overflow-hidden rounded-[2rem] border border-white/5 bg-white/1 p-8 md:p-12 h-full transition-all group-hover:border-white/20">
-                        <div class="aspect-[16/10] overflow-hidden rounded-2xl mb-10 relative">
+                        class="relative overflow-hidden rounded-4xl border border-white/5 bg-white/1 p-8 md:p-12 h-full transition-all group-hover:border-white/20">
+                        <div class="aspect-16/10 overflow-hidden rounded-2xl mb-10 relative">
                             <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
                                 alt="Fintech"
                                 class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
@@ -201,7 +187,7 @@
                         </div>
 
                         <div class="flex justify-between items-start mb-6">
-                            <span class="font-space text-brand-blue text-sm tracking-[0.4em] uppercase font-bold">Cyber
+                            <span class="font-space text-brand-blue text-sm tracking-widest uppercase font-bold">Cyber
                                 Security / FinTech</span>
                             <span class="font-space text-white/30 text-sm tracking-widest">2024</span>
                         </div>
@@ -234,11 +220,11 @@
                 <!-- Case Item 3 -->
                 <div class="group relative card-reveal opacity-0 translate-y-8">
                     <div
-                        class="absolute inset-0 bg-linear-to-b from-white/5 to-transparent rounded-[2rem] -z-10 group-hover:from-brand-purple/10 transition-colors duration-700">
+                        class="absolute inset-0 bg-linear-to-b from-white/5 to-transparent rounded-4xl -z-10 group-hover:from-brand-purple/10 transition-colors duration-700">
                     </div>
                     <div
-                        class="relative overflow-hidden rounded-[2rem] border border-white/5 bg-white/1 p-8 md:p-12 h-full transition-all group-hover:border-white/20">
-                        <div class="aspect-[16/10] overflow-hidden rounded-2xl mb-10 relative">
+                        class="relative overflow-hidden rounded-4xl border border-white/5 bg-white/1 p-8 md:p-12 h-full transition-all group-hover:border-white/20">
+                        <div class="aspect-16/10 overflow-hidden rounded-2xl mb-10 relative">
                             <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
                                 alt="Cloud"
                                 class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
@@ -247,7 +233,7 @@
 
                         <div class="flex justify-between items-start mb-6">
                             <span
-                                class="font-space text-brand-purple text-sm tracking-[0.4em] uppercase font-bold">Cloud
+                                class="font-space text-brand-purple text-sm tracking-widest uppercase font-bold">Cloud
                                 Infrastructure</span>
                             <span class="font-space text-white/30 text-sm tracking-widest">2024</span>
                         </div>
@@ -282,53 +268,135 @@
         <!-- Recommended Sections: Strategic Solutions -->
         <section class="max-w-[1400px] mx-auto px-4 sm:px-8 py-32 section-reveal border-t border-white/5">
             <div class="mb-20">
-                <span class="font-space text-brand-blue text-[10px] tracking-[0.4em] uppercase mb-4 block font-bold">Recommended Innovations</span>
+                <span class="font-space text-brand-blue text-[10px] tracking-widest uppercase mb-4 block font-bold">Recommended Innovations</span>
                 <h2 class="font-space text-4xl md:text-6xl font-bold uppercase tracking-tighter text-white">Strategic Solutions.</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
                 <div class="group relative card-reveal opacity-0 translate-y-8 h-full">
-                    <div class="relative h-full glass p-10 border border-white/10 rounded-[2.5rem] bg-white/2 backdrop-blur-md flex flex-col transition-all hover:bg-white/5 hover:border-white/20">
+                    <div class="relative h-full glass p-10 border border-white/10 rounded-4xl bg-white/2 backdrop-blur-md flex flex-col transition-all hover:bg-white/5 hover:border-white/20">
                         <div class="w-12 h-12 rounded-2xl bg-brand-blue/10 flex items-center justify-center mb-8 text-brand-blue">
                              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                         </div>
                         <h3 class="font-space text-2xl font-bold text-white mb-4 uppercase tracking-tight">App Engineering</h3>
-                        <p class="font-inter text-white/50 text-sm leading-relaxed mb-10 flex-grow">Modernizing legacy architectures into cloud-native ecosystems with zero-downtime scalability.</p>
+                        <p class="font-inter text-white/50 text-sm leading-relaxed mb-10 grow">Modernizing legacy architectures into cloud-native ecosystems with zero-downtime scalability.</p>
                         <a href="services.html" class="inline-flex items-center gap-4 text-[10px] font-space uppercase tracking-widest text-brand-blue group-hover:gap-6 transition-all font-bold">Explore Service <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="group relative card-reveal opacity-0 translate-y-8 h-full">
-                    <div class="relative h-full glass p-10 border border-white/10 rounded-[2.5rem] bg-white/2 backdrop-blur-md flex flex-col transition-all hover:bg-white/5 hover:border-white/20">
+                    <div class="relative h-full glass p-10 border border-white/10 rounded-4xl bg-white/2 backdrop-blur-md flex flex-col transition-all hover:bg-white/5 hover:border-white/20">
                         <div class="w-12 h-12 rounded-2xl bg-brand-pink/10 flex items-center justify-center mb-8 text-brand-pink">
                              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                         </div>
                         <h3 class="font-space text-2xl font-bold text-white mb-4 uppercase tracking-tight">Digital Marketing</h3>
-                        <p class="font-inter text-white/50 text-sm leading-relaxed mb-10 flex-grow">Data-driven growth strategies that bridge the gap between human intuition and algorithmic precision.</p>
+                        <p class="font-inter text-white/50 text-sm leading-relaxed mb-10 grow">Data-driven growth strategies that bridge the gap between human intuition and algorithmic precision.</p>
                         <a href="services.html" class="inline-flex items-center gap-4 text-[10px] font-space uppercase tracking-widest text-brand-pink group-hover:gap-6 transition-all font-bold">Explore Service <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="group relative card-reveal opacity-0 translate-y-8 h-full">
-                    <div class="relative h-full glass p-10 border border-white/10 rounded-[2.5rem] bg-white/2 backdrop-blur-md flex flex-col transition-all hover:bg-white/5 hover:border-white/20">
+                    <div class="relative h-full glass p-10 border border-white/10 rounded-4xl bg-white/2 backdrop-blur-md flex flex-col transition-all hover:bg-white/5 hover:border-white/20">
                         <div class="w-12 h-12 rounded-2xl bg-brand-purple/10 flex items-center justify-center mb-8 text-brand-purple">
                              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A10.003 10.003 0 0012 3m0 0a10.003 10.003 0 0110.382 13.567m-9.64-2.09l.054.09A10.003 10.003 0 0022 3m-10 1a9 9 0 019 9m-9-9a9 9 0 00-9 9m9 9c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z"/></svg>
                         </div>
                         <h3 class="font-space text-2xl font-bold text-white mb-4 uppercase tracking-tight">AI & Automation</h3>
-                        <p class="font-inter text-white/50 text-sm leading-relaxed mb-10 flex-grow">Integrating generative AI and autonomous agents to redefine operational efficiency and creativity.</p>
+                        <p class="font-inter text-white/50 text-sm leading-relaxed mb-10 grow">Integrating generative AI and autonomous agents to redefine operational efficiency and creativity.</p>
                         <a href="services.html" class="inline-flex items-center gap-4 text-[10px] font-space uppercase tracking-widest text-brand-purple group-hover:gap-6 transition-all font-bold">Explore Service <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Strategic Insights (Blog Section) -->
+        <section class="max-w-[1400px] mx-auto px-4 sm:px-8 py-32 section-reveal border-t border-white/5">
+            <div class="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
+                <div>
+                    <span class="font-space text-brand-pink text-[10px] tracking-widest uppercase mb-4 block font-bold">Insights & Perspective</span>
+                    <h2 class="font-space text-4xl md:text-6xl font-bold uppercase tracking-tighter text-white">The Engineering Journal.</h2>
+                </div>
+                <a href="#" class="hoverable group flex items-center gap-4 text-[10px] font-space uppercase tracking-widest text-white/40 hover:text-white transition-colors">
+                    Explore All Articles
+                    <div class="w-8 h-px bg-white/20 group-hover:w-12 group-hover:bg-brand-pink transition-all"></div>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Blog Item 1 -->
+                <article class="group relative card-reveal opacity-0 translate-y-8">
+                    <a href="blog-detail.html" class="block">
+                        <div class="relative aspect-16/10 overflow-hidden rounded-3xl mb-8 border border-white/10">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="Cybersecurity" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                            <div class="absolute inset-0 bg-linear-to-t from-brand-bg/80 to-transparent"></div>
+                            <span class="absolute top-6 left-6 glass px-3 py-1 rounded-full font-space text-[9px] tracking-widest text-white uppercase border border-white/20">Security</span>
+                        </div>
+                        <div class="flex items-center gap-4 mb-4 font-space text-[9px] tracking-widest text-white/30 uppercase">
+                            <span>March 24, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-brand-pink"></span>
+                            <span>8 Min Read</span>
+                        </div>
+                        <h3 class="font-space text-2xl font-bold text-white mb-4 leading-tight group-hover:text-brand-pink transition-colors uppercase tracking-tight">The Future of Zero-Trust in High-Frequency Trading.</h3>
+                        <p class="font-inter text-white/50 text-sm leading-relaxed mb-6 line-clamp-2">Exploring the intersections of sub-millisecond latency and cryptographic verification in modern financial architectures.</p>
+                        <div class="flex items-center gap-2 text-brand-pink">
+                            <span class="font-space text-[10px] tracking-widest uppercase font-bold">Read Entry</span>
+                            <svg class="w-4 h-4 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Blog Item 2 -->
+                <article class="group relative card-reveal opacity-0 translate-y-8">
+                    <a href="blog-detail.html" class="block">
+                        <div class="relative aspect-16/10 overflow-hidden rounded-3xl mb-8 border border-white/10">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" alt="Data" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                            <div class="absolute inset-0 bg-linear-to-t from-brand-bg/80 to-transparent"></div>
+                            <span class="absolute top-6 left-6 glass px-3 py-1 rounded-full font-space text-[9px] tracking-widest text-white uppercase border border-white/20">Scalability</span>
+                        </div>
+                        <div class="flex items-center gap-4 mb-4 font-space text-[9px] tracking-widest text-white/30 uppercase">
+                            <span>March 20, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-brand-blue"></span>
+                            <span>12 Min Read</span>
+                        </div>
+                        <h3 class="font-space text-2xl font-bold text-white mb-4 leading-tight group-hover:text-brand-blue transition-colors uppercase tracking-tight">Orchestrating Global Data Gravity at Scale.</h3>
+                        <p class="font-inter text-white/50 text-sm leading-relaxed mb-6 line-clamp-2">How we managed data sovereignty and regional performance for a multi-continental commerce engine with zero downtime.</p>
+                        <div class="flex items-center gap-2 text-brand-blue">
+                            <span class="font-space text-[10px] tracking-widest uppercase font-bold">Read Entry</span>
+                            <svg class="w-4 h-4 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Blog Item 3 -->
+                <article class="group relative card-reveal opacity-0 translate-y-8">
+                    <a href="blog-detail.html" class="block">
+                        <div class="relative aspect-16/10 overflow-hidden rounded-3xl mb-8 border border-white/10">
+                            <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&q=80&w=800" alt="AI" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                            <div class="absolute inset-0 bg-linear-to-t from-brand-bg/80 to-transparent"></div>
+                            <span class="absolute top-6 left-6 glass px-3 py-1 rounded-full font-space text-[9px] tracking-widest text-white uppercase border border-white/20">Innovation</span>
+                        </div>
+                        <div class="flex items-center gap-4 mb-4 font-space text-[9px] tracking-widest text-white/30 uppercase">
+                            <span>March 15, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-brand-purple"></span>
+                            <span>6 Min Read</span>
+                        </div>
+                        <h3 class="font-space text-2xl font-bold text-white mb-4 leading-tight group-hover:text-brand-purple transition-colors uppercase tracking-tight">The Human Element in Autonomous Infrastructure.</h3>
+                        <p class="font-inter text-white/50 text-sm leading-relaxed mb-6 line-clamp-2">Why ethical oversight and human intuition remain the core foundations of AI-driven enterprise transformation.</p>
+                        <div class="flex items-center gap-2 text-brand-purple">
+                            <span class="font-space text-[10px] tracking-widest uppercase font-bold">Read Entry</span>
+                            <svg class="w-4 h-4 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
         <!-- Dynamic CTA -->
         <section class="max-w-[1400px] mx-auto px-4 sm:px-8 pb-0 section-reveal">
             <div
-                class="relative rounded-[4rem] border border-white/5 overflow-hidden bg-white/1 backdrop-blur-[100px] p-12 md:p-32 text-center group">
+                class="relative rounded-4xl border border-white/5 overflow-hidden bg-white/1 backdrop-blur-[100px] p-12 md:p-32 text-center group">
                 <div class="absolute inset-0 pointer-events-none">
                     <div
                         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] bg-brand-purple/10 rounded-full blur-[160px] group-hover:bg-brand-pink/10 transition-colors duration-[2s]">
@@ -337,7 +405,7 @@
 
                 <div
                     class="inline-flex items-center gap-3 glass px-5 py-2 border border-white/10 rounded-full mb-10 relative z-10">
-                    <span class="text-xs font-space tracking-[0.5em] text-white/40 uppercase">Ready to scale?</span>
+                    <span class="text-xs font-space tracking-widest text-white/40 uppercase">Ready to scale?</span>
                 </div>
 
                 <h2
@@ -360,8 +428,9 @@
     </main>
 
     <!-- Footer Preview -->
+    <!-- Footer -->
     <footer
-        class="pt-16 pb-24 px-4 sm:px-8 border-t border-white/10 relative z-20 bg-[var(--color-brand-bg)] overflow-hidden">
+        class="py-24 px-4 sm:px-8 border-t border-white/10 relative z-20 bg-brand-bg overflow-hidden mt-16">
         <!-- Giant Background text -->
         <div
             class="absolute top-0 left-0 w-full overflow-hidden opacity-5 pointer-events-none select-none flex justify-center">
@@ -375,7 +444,7 @@
                 <div class="lg:col-span-4">
                     <a href="index.html"
                         class="font-space text-3xl font-bold tracking-widest uppercase block mb-6">INTELEGENCIA<span
-                            class="text-[var(--color-brand-pink)]">.</span></a>
+                            class="text-brand-pink">.</span></a>
                     <p class="font-inter text-white/50 text-sm mb-12 uppercase tracking-widest max-w-[200px]">Delivering
                         Excellence Across the Globe</p>
 
@@ -391,8 +460,7 @@
                                 class="text-white font-space uppercase tracking-widest text-xs mb-3 border-b border-white/10 pb-2 inline-block w-full">
                                 INDIA</h4>
                             <p class="mb-4">A-21, Lohia Rd, A Block, Sector 63,<br />Noida, Uttar Pradesh 201301</p>
-                            <p>KTC Illumination, First Floor, Gafoor Nagar,<br />Madhapur, Hyderabad, Telangana 500081
-                            </p>
+                            <p>KTC Illumination, First Floor, Gafoor Nagar,<br />Madhapur, Hyderabad, Telangana 500081</p>
                         </div>
                         <div>
                             <h4
@@ -411,21 +479,16 @@
                         <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Company</h4>
                         <ul class="space-y-3 font-inter text-sm text-white/50">
                             <li><a href="index.html" class="hover:text-white transition-colors hoverable">Home</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors hoverable">Blogs</a></li>
-                            <li><a href="case-studies.html"
-                                    class="hover:text-white transition-colors hoverable text-white">Case Studies</a>
-                            </li>
-                            <li><a href="services.html"
-                                    class="hover:text-white transition-colors hoverable">Services</a></li>
-                            <li><a href="about.html" class="hover:text-white transition-colors hoverable">About
-                                    Intelegencia</a></li>
+                            <li><a href="blog-detail.html" class="hover:text-white transition-colors hoverable">Blogs</a></li>
+                            <li><a href="case-studies.html" class="hover:text-white transition-colors hoverable">Case Studies</a></li>
+                            <li><a href="services.html" class="hover:text-white transition-colors hoverable">Services</a></li>
+                            <li><a href="about.html" class="hover:text-white transition-colors hoverable">About Intelegencia</a></li>
                         </ul>
                     </div>
                     <div>
                         <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">About Us</h4>
                         <ul class="space-y-3 font-inter text-sm text-white/50">
-                            <li><a href="about.html" class="hover:text-white transition-colors hoverable">Our Story</a>
-                            </li>
+                            <li><a href="about.html" class="hover:text-white transition-colors hoverable">Our Story</a></li>
                             <li><a href="#" class="hover:text-white transition-colors hoverable">Our Location</a></li>
                             <li><a href="#" class="hover:text-white transition-colors hoverable">Our Leadership</a></li>
                             <li><a href="#" class="hover:text-white transition-colors hoverable">News & Events</a></li>
@@ -434,27 +497,22 @@
                     <div>
                         <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Explore</h4>
                         <ul class="space-y-3 font-inter text-sm text-white/50">
-                            <li><a href="#" class="hover:text-white transition-colors hoverable">Career</a></li>
+                            <li><a href="career.html" class="hover:text-white transition-colors hoverable">Career</a></li>
                             <li><a href="#" class="hover:text-white transition-colors hoverable">Our Culture</a></li>
-                            <li><a href="#" class="hover:text-white transition-colors hoverable">Current Opening</a>
-                            </li>
+                            <li><a href="#" class="hover:text-white transition-colors hoverable">Current Opening</a></li>
                             <li><a href="#" class="hover:text-white transition-colors hoverable">Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div>
                         <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Engagement</h4>
                         <ul class="space-y-3 font-inter text-sm text-white/50 leading-relaxed">
-                            <li><a href="services.html" class="hover:text-white transition-colors hoverable">App &
-                                    Engineering</a>
+                            <li><a href="services.html" class="hover:text-white transition-colors hoverable">App & Engineering</a>
                             </li>
-                            <li><a href="services.html" class="hover:text-white transition-colors hoverable">Digital
-                                    Marketing</a>
+                            <li><a href="services.html" class="hover:text-white transition-colors hoverable">Digital Marketing</a>
                             </li>
-                            <li><a href="services.html" class="hover:text-white transition-colors hoverable">Customer
-                                    Service &
+                            <li><a href="services.html" class="hover:text-white transition-colors hoverable">Customer Service &
                                     BPO</a></li>
-                            <li><a href="services.html" class="hover:text-white transition-colors hoverable">Legal</a>
-                            </li>
+                            <li><a href="services.html" class="hover:text-white transition-colors hoverable">Legal</a></li>
                         </ul>
                     </div>
                 </div>
@@ -487,22 +545,6 @@
                 stagger: 0.15,
                 ease: 'power4.out',
                 delay: 0.5
-            });
-
-            // Card entry animations
-            const cards = document.querySelectorAll('.card-reveal');
-            cards.forEach((card, index) => {
-                gsap.to(card, {
-                    scrollTrigger: {
-                        trigger: card,
-                        start: 'top 85%',
-                        toggleActions: 'play none none none'
-                    },
-                    opacity: 1,
-                    y: 0,
-                    duration: 1,
-                    ease: 'power3.out'
-                });
             });
 
             // Parallax effect for orbs

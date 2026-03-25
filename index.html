@@ -30,11 +30,9 @@
   <div class="noise-bg"></div>
 
   <!-- Abstract Minimal Navbar -->
-  <nav
-    class="fixed w-full z-50 top-0 px-6 py-6 flex justify-between items-center dark:mix-blend-difference pointer-events-auto border-b border-white/5 bg-brand-bg/20 backdrop-blur-sm">
+  <nav class="fixed w-full z-50 top-0 px-6 py-6 flex justify-between items-center dark:mix-blend-difference pointer-events-auto border-b border-white/5 bg-brand-bg/20 backdrop-blur-md">
     <div class="hoverable">
-      <a href="index.html" class="font-space text-xl font-bold tracking-widest uppercase">INT<span
-          class="text-white/50">L</span></a>
+      <a href="index.html" class="font-space text-xl font-bold tracking-widest uppercase">INT<span class="text-white/50">L</span></a>
     </div>
     <div class="hidden lg:flex space-x-8 font-space text-xs tracking-[0.2em] items-center text-white/50">
       <a href="services.html" class="hoverable transition-colors hover:text-white">SERVICES</a>
@@ -43,23 +41,10 @@
       <a href="case-studies.html" class="hoverable transition-colors hover:text-white">CASE STUDIES</a>
     </div>
     <div class="hoverable flex items-center space-x-4">
-      <a href="contact.html"
-        class="font-space text-xs border border-white/20 rounded-full px-6 py-3 bg-white text-black hover:bg-transparent hover:text-white transition-all duration-300 uppercase tracking-widest">Connect</a>
-      <button id="themeToggle"
-        class="w-11 h-11 rounded-full border border-white/20 flex justify-center items-center overflow-hidden relative transition-colors cursor-none hoverable group">
-        <svg
-          class="w-5 h-5 text-white absolute transition-all duration-500 transform scale-0 rotate-90 dark:scale-100 dark:rotate-0"
-          fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-        </svg>
-        <svg
-          class="w-6 h-6 text-white absolute transition-all duration-500 transform scale-100 rotate-0 dark:scale-0 dark:-rotate-90"
-          fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
-          </path>
-        </svg>
+      <a href="contact.html" class="font-space text-xs border border-white/20 rounded-full px-6 py-3 bg-white text-black hover:bg-transparent hover:text-white transition-all duration-300 uppercase tracking-widest">Connect</a>
+      <button id="themeToggle" class="w-11 h-11 rounded-full border border-white/20 flex justify-center items-center overflow-hidden relative transition-colors hoverable group">
+        <svg class="w-5 h-5 text-white absolute transition-all duration-500 transform scale-0 rotate-90 dark:scale-100 dark:rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+        <svg class="w-6 h-6 text-white absolute transition-all duration-500 transform scale-100 rotate-0 dark:scale-0 dark:-rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
       </button>
     </div>
   </nav>
@@ -86,7 +71,7 @@
       </div>
 
       <div
-        class="absolute bottom-48 right-8 md:right-[12%] z-10 glass p-6 border-t-2 border-brand-blue rounded-b-md hidden lg:flex flex-col backdrop-blur-md bg-brand-bg/80 border-r border-l border-white/5 max-w-xs text-right">
+        class="absolute bottom-48 right-8 md:right-[12%] z-10 glass p-6 border-t-2 border-t-brand-blue rounded-b-md hidden lg:flex flex-col backdrop-blur-md bg-brand-bg/80 border-r border-l border-white/5 max-w-xs text-right">
         <span class="font-space text-brand-blue text-4xl font-bold tracking-tighter">99.9%</span>
         <span class="font-space font-bold text-xs text-white/70 tracking-[0.3em] uppercase mt-2">Uptime SLA
           Guaranteed</span>
@@ -463,7 +448,7 @@
               <div
                 class="md:col-span-2 font-space tracking-widest text-[10px] md:text-xs uppercase opacity-30 group-hover:opacity-100 transition-opacity mt-4 md:mt-0 text-brand-purple border border-brand-purple/30 rounded-full px-4 py-2 inline-block w-max">
                 Cloud Infra</div>
-              <div class="md:col-span-1 flex justify-start md:justify-end mt-4 md:mt-0 hidden md:flex">
+              <div class="md:col-span-1 hidden md:flex justify-end mt-4 md:mt-0">
                 <span
                   class="w-16 h-16 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-brand-purple group-hover:border-transparent transition-all">
                   <svg
@@ -493,7 +478,7 @@
               <div
                 class="md:col-span-2 font-space tracking-widest text-[10px] md:text-xs uppercase opacity-30 group-hover:opacity-100 transition-opacity mt-4 md:mt-0 text-brand-blue border border-brand-blue/30 rounded-full px-4 py-2 inline-block w-max">
                 Mobile Dev</div>
-              <div class="md:col-span-1 flex justify-start md:justify-end mt-4 md:mt-0 hidden md:flex">
+              <div class="md:col-span-1 hidden md:flex justify-end mt-4 md:mt-0">
                 <span
                   class="w-16 h-16 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-brand-blue group-hover:border-transparent transition-all">
                   <svg
@@ -517,9 +502,9 @@
           class="font-space text-4xl md:text-6xl uppercase tracking-tighter mb-16 text-reveal-block text-center md:text-left">
           Research & Insights</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <a href="#"
+          <a href="blog-detail.html"
             class="hoverable group block text-reveal-block opacity-0 border border-white/10 p-6 rounded-2xl bg-brand-bg hover:bg-brand-purple/10 transition-all">
-            <div class="aspect-16/9 overflow-hidden rounded-xl mb-6">
+            <div class="aspect-video overflow-hidden rounded-xl mb-6">
               <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800"
                 alt="Tech"
                 class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
@@ -530,9 +515,9 @@
             <p class="text-white/50 text-sm font-inter">A deep dive into conversational automated agents replacing
               traditional frameworks.</p>
           </a>
-          <a href="#"
+          <a href="blog-detail.html"
             class="hoverable group block text-reveal-block opacity-0 border border-white/10 p-6 rounded-2xl bg-brand-bg hover:bg-brand-blue/10 transition-all md:translate-y-12">
-            <div class="aspect-16/9 overflow-hidden rounded-xl mb-6">
+            <div class="aspect-video overflow-hidden rounded-xl mb-6">
               <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
                 alt="Cloud"
                 class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
@@ -543,9 +528,9 @@
             <p class="text-white/50 text-sm font-inter">How we transitioned a top 50 financial entity to serverless
               clusters.</p>
           </a>
-          <a href="#"
+          <a href="blog-detail.html"
             class="hoverable group block text-reveal-block opacity-0 border border-white/10 p-6 rounded-2xl bg-brand-bg hover:bg-brand-pink/10 transition-all md:translate-y-24">
-            <div class="aspect-16/9 overflow-hidden rounded-xl mb-6">
+            <div class="aspect-video overflow-hidden rounded-xl mb-6">
               <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800"
                 alt="Data"
                 class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
@@ -706,7 +691,7 @@
             <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Company</h4>
             <ul class="space-y-3 font-inter text-sm text-white/50">
               <li><a href="index.html" class="hover:text-white transition-colors hoverable">Home</a></li>
-              <li><a href="#" class="hover:text-white transition-colors hoverable">Blogs</a></li>
+              <li><a href="blog-detail.html" class="hover:text-white transition-colors hoverable">Blogs</a></li>
               <li><a href="case-studies.html" class="hover:text-white transition-colors hoverable">Case Studies</a></li>
               <li><a href="services.html" class="hover:text-white transition-colors hoverable">Services</a></li>
               <li><a href="about.html" class="hover:text-white transition-colors hoverable">About Intelegencia</a></li>
@@ -724,7 +709,7 @@
           <div>
             <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Explore</h4>
             <ul class="space-y-3 font-inter text-sm text-white/50">
-              <li><a href="#" class="hover:text-white transition-colors hoverable">Career</a></li>
+              <li><a href="career.html" class="hover:text-white transition-colors hoverable">Career</a></li>
               <li><a href="#" class="hover:text-white transition-colors hoverable">Our Culture</a></li>
               <li><a href="#" class="hover:text-white transition-colors hoverable">Current Opening</a></li>
               <li><a href="#" class="hover:text-white transition-colors hoverable">Privacy Policy</a></li>
@@ -758,13 +743,8 @@
       </div>
     </div>
   </footer>
-  </main>
 
   <script src="./js/script.js"></script>
-</body>
-
-</html>
-t>
 </body>
 
 </html>
