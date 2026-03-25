@@ -59,11 +59,6 @@
 }
 
 /* Custom Cursor */
-@media (pointer: fine) {
-  body {
-    cursor: none;
-  }
-}
 .custom-cursor {
   position: fixed;
   top: 0;

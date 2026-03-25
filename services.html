@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth bg-[var(--color-brand-bg)] text-white">
+<html lang="en" class="dark scroll-smooth bg-brand-bg text-white">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,19 +17,19 @@
   <div class="noise-bg"></div>
 
   <!-- Abstract Minimal Navbar -->
-  <nav class="fixed w-full z-50 top-0 px-6 py-6 flex justify-between items-center dark:mix-blend-difference pointer-events-auto border-b border-white/5 bg-[var(--color-brand-bg)]/20 backdrop-blur-sm">
+  <nav class="fixed w-full z-50 top-0 px-6 py-6 flex justify-between items-center dark:mix-blend-difference pointer-events-auto border-b border-white/5 bg-[var(--color-brand-bg)]/20 backdrop-blur-md">
     <div class="hoverable">
       <a href="index.html" class="font-space text-xl font-bold tracking-widest uppercase">INT<span class="text-white/50">L</span></a>
     </div>
     <div class="hidden lg:flex space-x-8 font-space text-xs tracking-[0.2em] items-center text-white/50">
-      <a href="services.html" class="hoverable transition-colors hover:text-white">SERVICES</a>
+      <a href="services.html" class="hoverable transition-colors hover:text-white text-white">SERVICES</a>
       <a href="portfolio.html" class="hoverable transition-colors hover:text-white">WORK</a>
       <a href="about.html" class="hoverable transition-colors hover:text-white">STORY</a>
-      <a href="#" class="hoverable transition-colors hover:text-white">CASE STUDIES</a>
+      <a href="case-studies.html" class="hoverable transition-colors hover:text-white">CASE STUDIES</a>
     </div>
     <div class="hoverable flex items-center space-x-4">
       <a href="contact.html" class="font-space text-xs border border-white/20 rounded-full px-6 py-3 bg-white text-black hover:bg-transparent hover:text-white transition-all duration-300 uppercase tracking-widest">Connect</a>
-      <button id="themeToggle" class="w-11 h-11 rounded-full border border-white/20 flex justify-center items-center overflow-hidden relative transition-colors cursor-none hoverable group">
+      <button id="themeToggle" class="w-11 h-11 rounded-full border border-white/20 flex justify-center items-center overflow-hidden relative transition-colors hoverable group">
         <svg class="w-5 h-5 text-white absolute transition-all duration-500 transform scale-0 rotate-90 dark:scale-100 dark:rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
         <svg class="w-6 h-6 text-white absolute transition-all duration-500 transform scale-100 rotate-0 dark:scale-0 dark:-rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
       </button>
@@ -42,35 +42,118 @@
 <!-- Enhanced Hero Section -->
   <section class="relative min-h-[70vh] flex flex-col justify-center max-w-[1400px] mx-auto px-4 sm:px-8 mb-32 service-category">
      <!-- Decorative Background Glowing Orbs -->
-     <div class="absolute top-10 right-10 w-[40vw] h-[40vw] bg-[var(--color-brand-purple)]/10 rounded-full blur-[140px] pointer-events-none -z-10 mix-blend-screen transition-all duration-[30s] animate-pulse"></div>
-     <div class="absolute bottom-10 left-10 w-[30vw] h-[30vw] bg-[var(--color-brand-pink)]/10 rounded-full blur-[120px] pointer-events-none -z-10 mix-blend-screen transition-all duration-[20s] animate-pulse"></div>
+     <div class="absolute top-10 right-10 w-[40vw] h-[40vw] bg-brand-purple/10 rounded-full blur-[140px] pointer-events-none -z-10 mix-blend-screen transition-all duration-[30s] animate-pulse"></div>
+     <div class="absolute bottom-10 left-10 w-[30vw] h-[30vw] bg-brand-pink/10 rounded-full blur-[120px] pointer-events-none -z-10 mix-blend-screen transition-all duration-[20s] animate-pulse"></div>
 
      <div class="relative z-10 text-reveal-block">
         <!-- Minimal Status Badge -->
-        <div class="inline-flex items-center gap-3 border border-white/20 rounded-full px-6 py-2 mb-10 section-heading opacity-0 bg-white/5 backdrop-blur-md shadow-lg shadow-[var(--color-brand-purple)]/10">
-            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-pink)] animate-ping relative before:absolute before:inset-0 before:bg-[var(--color-brand-pink)] before:rounded-full before:animate-ping"></span>
+        <div class="inline-flex items-center gap-3 border border-white/20 rounded-full px-6 py-2 mb-10 section-heading opacity-0 bg-white/5 backdrop-blur-md shadow-lg shadow-brand-purple/10">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-pink animate-ping relative before:absolute before:inset-0 before:bg-brand-pink before:rounded-full before:animate-ping"></span>
             <span class="font-space text-[10px] tracking-[0.4em] uppercase text-white/80">Services & Solutions</span>
         </div>
 
         <h1 class="font-space text-6xl md:text-[9rem] font-bold uppercase tracking-tighter dark:mix-blend-difference leading-[0.85] section-heading opacity-0 group">
-          Digital<br/>Capabilities<span class="text-[var(--color-brand-purple)] group-hover:text-[var(--color-brand-pink)] transition-colors duration-700">.</span>
+          Digital<br/>
+          <span class="text-gradient inline-block group-hover:brightness-110 transition-all duration-700">Capabilities</span><span class="text-brand-purple group-hover:text-brand-pink transition-colors duration-700">.</span>
         </h1>
         
-        <div class="mt-16 flex flex-col md:flex-row md:items-end justify-between gap-12 section-heading opacity-0 border-t border-white/10 pt-12">
+        <div class="mt-16 flex flex-col lg:flex-row lg:items-end justify-between gap-12 section-heading opacity-0 border-t border-white/10 pt-12">
+          <div class="lg:w-7/12">
             <p class="font-inter text-xl md:text-3xl text-white/50 max-w-3xl leading-relaxed">
-                Engineering <strong class="text-white font-normal">hyper-scalable architectures</strong>, accelerating customer channels, and mathematically optimizing world-class brand operations.
+              Engineering <strong class="text-white font-normal">hyper-scalable architectures</strong>, accelerating customer channels, and mathematically optimizing world-class brand operations.
             </p>
-            
-            <!-- Abstract Architecture Indicator -->
-            <div class="flex items-center gap-6 hidden md:flex">
-                <div class="flex flex-col gap-2 uppercase font-space text-[10px] tracking-[0.2em] text-white/30 text-right">
-                    <span>Active Deployment</span>
-                    <span class="text-[var(--color-brand-purple)] font-bold">Global Nodes</span>
-                </div>
-                <div class="w-16 h-16 border border-white/20 rounded-full flex items-center justify-center rotate-45 text-[var(--color-brand-pink)] text-2xl hover:bg-white/10 hover:scale-110 transition-all cursor-pointer">
-                    &rarr;
-                </div>
+
+            <!-- Capability bullets -->
+            <ul class="mt-8 grid gap-3 sm:grid-cols-2 max-w-2xl">
+              <li class="flex items-start gap-3 text-white/60 font-inter text-sm md:text-base">
+                <span class="mt-2 w-2.5 h-2.5 rounded-full bg-brand-purple shadow-[0_0_16px_rgba(114,9,183,1)]"></span>
+                <span>Enterprise architecture & platform engineering</span>
+              </li>
+              <li class="flex items-start gap-3 text-white/60 font-inter text-sm md:text-base">
+                <span class="mt-2 w-2.5 h-2.5 rounded-full bg-brand-pink shadow-[0_0_16px_rgba(247,37,133,1)]"></span>
+                <span>Automation, CI/CD, and reliable delivery pipelines</span>
+              </li>
+              <li class="flex items-start gap-3 text-white/60 font-inter text-sm md:text-base sm:col-span-2">
+                <span class="mt-2 w-2.5 h-2.5 rounded-full bg-brand-blue shadow-[0_0_16px_rgba(58,134,255,1)]"></span>
+                <span>Security-first deployments and performance optimization</span>
+              </li>
+            </ul>
+
+            <!-- CTAs -->
+            <div class="mt-10 flex flex-col sm:flex-row gap-4">
+              <a href="#app-services" class="relative inline-flex items-center justify-center gap-3 bg-white text-black font-space tracking-widest uppercase text-xs md:text-sm px-10 py-4 rounded-full hover:bg-transparent hover:text-white border border-transparent hover:border-white transition-all hover:scale-105 duration-300 cursor-pointer z-10">
+                Explore services
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </a>
+
+              <a href="contact.html" class="relative inline-flex items-center justify-center gap-3 bg-transparent text-white font-space tracking-widest uppercase text-xs md:text-sm px-10 py-4 rounded-full border border-white/20 hover:border-white hover:bg-white/5 transition-all hover:scale-105 duration-300 cursor-pointer z-10">
+                Request a proposal
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+                </svg>
+              </a>
             </div>
+          </div>
+
+          <!-- Stats panel -->
+          <div class="lg:w-5/12 w-full">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div class="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-5 group hover:border-white/20 transition-all duration-500">
+                <div class="w-11 h-11 rounded-xl border border-white/10 bg-white/5 flex items-center justify-center text-[var(--color-brand-purple)] group-hover:bg-[var(--color-brand-purple)]/10 transition-colors">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div class="mt-4 flex items-baseline gap-2">
+                  <span class="stat-counter font-space text-4xl font-bold tracking-tight" data-target="99">0</span>
+                  <span class="font-inter text-white/50 text-sm">%</span>
+                </div>
+                <div class="mt-1 font-space text-[10px] tracking-[0.2em] uppercase text-white/60">Uptime</div>
+              </div>
+
+              <div class="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-5 group hover:border-white/20 transition-all duration-500">
+                <div class="w-11 h-11 rounded-xl border border-white/10 bg-white/5 flex items-center justify-center text-[var(--color-brand-pink)] group-hover:bg-[var(--color-brand-pink)]/10 transition-colors">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div class="mt-4 flex items-baseline gap-2">
+                  <span class="stat-counter font-space text-4xl font-bold tracking-tight" data-target="42">0</span>
+                  <span class="font-inter text-white/50 text-sm">k+</span>
+                </div>
+                <div class="mt-1 font-space text-[10px] tracking-[0.2em] uppercase text-white/60">Deploys</div>
+              </div>
+
+              <div class="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-5 group hover:border-white/20 transition-all duration-500">
+                <div class="w-11 h-11 rounded-xl border border-white/10 bg-white/5 flex items-center justify-center text-[var(--color-brand-blue)] group-hover:bg-[var(--color-brand-blue)]/10 transition-colors">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3v6a3 3 0 106 0v-6c0-1.657-1.343-3-3-3z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 8V5a3 3 0 016 0v3" />
+                  </svg>
+                </div>
+                <div class="mt-4 flex items-baseline gap-2">
+                  <span class="stat-counter font-space text-4xl font-bold tracking-tight" data-target="24">0</span>
+                  <span class="font-inter text-white/50 text-sm">/7</span>
+                </div>
+                <div class="mt-1 font-space text-[10px] tracking-[0.2em] uppercase text-white/60">Support</div>
+              </div>
+            </div>
+
+            <!-- Abstract Architecture Indicator (desktop) -->
+            <div class="flex items-center gap-6 mt-6 hidden md:flex">
+              <div class="flex flex-col gap-2 uppercase font-space text-[10px] tracking-[0.2em] text-white/30 text-right">
+                <span>Active Deployment</span>
+                <span class="text-[var(--color-brand-purple)] font-bold">Global Nodes</span>
+              </div>
+              <div class="w-16 h-16 border border-white/20 rounded-full flex items-center justify-center rotate-45 text-[var(--color-brand-pink)] text-2xl hover:bg-white/10 hover:scale-110 transition-all cursor-pointer">
+                &rarr;
+              </div>
+            </div>
+          </div>
         </div>
      </div>
   </section>
@@ -1159,7 +1242,7 @@
           <ul class="space-y-3 font-inter text-sm text-white/50">
             <li><a href="index.html" class="hover:text-white transition-colors hoverable">Home</a></li>
             <li><a href="#" class="hover:text-white transition-colors hoverable">Blogs</a></li>
-            <li><a href="#" class="hover:text-white transition-colors hoverable">Case Studies</a></li>
+            <li><a href="case-studies.html" class="hover:text-white transition-colors hoverable">Case Studies</a></li>
             <li><a href="services.html" class="hover:text-white transition-colors hoverable">Services</a></li>
             <li><a href="about.html" class="hover:text-white transition-colors hoverable">About Intelegencia</a></li>
           </ul>
