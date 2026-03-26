@@ -190,7 +190,7 @@
     </section>
 
     <!-- Career Footer CTA -->
-    <section class="max-w-[1400px] mx-auto px-4 sm:px-8 py-32 border-t border-white/5 section-reveal opacity-0">
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-8 pt-32 border-t border-white/5 section-reveal opacity-0">
         <div class="relative rounded-4xl overflow-hidden bg-white/3 border border-white/10 p-12 md:p-24 text-center">
             <div class="absolute inset-0 bg-linear-to-br from-brand-pink/5 via-transparent to-brand-blue/5 pointer-events-none"></div>
             <div class="relative z-10 max-w-3xl mx-auto text-center flex flex-col items-center">
@@ -262,7 +262,6 @@
               <li><a href="blog-detail.html" class="hover:text-white transition-colors hoverable">Blogs</a></li>
               <li><a href="case-studies.html" class="hover:text-white transition-colors hoverable">Case Studies</a></li>
               <li><a href="services.html" class="hover:text-white transition-colors hoverable">Services</a></li>
-              <li><a href="about.html" class="hover:text-white transition-colors hoverable">About Intelegencia</a></li>
             </ul>
           </div>
           <div>
@@ -270,8 +269,7 @@
             <ul class="space-y-3 font-inter text-sm text-white/50">
               <li><a href="about.html" class="hover:text-white transition-colors hoverable">Our Story</a></li>
               <li><a href="#" class="hover:text-white transition-colors hoverable">Our Location</a></li>
-              <li><a href="#" class="hover:text-white transition-colors hoverable">Our Leadership</a></li>
-              <li><a href="#" class="hover:text-white transition-colors hoverable">News & Events</a></li>
+              <li><a href="leadership.html" class="hover:text-white transition-colors hoverable">Our Leadership</a></li>
             </ul>
           </div>
           <div>
@@ -279,7 +277,6 @@
             <ul class="space-y-3 font-inter text-sm text-white/50">
               <li><a href="career.html" class="hover:text-white transition-colors hoverable">Career</a></li>
               <li><a href="#" class="hover:text-white transition-colors hoverable">Our Culture</a></li>
-              <li><a href="#" class="hover:text-white transition-colors hoverable">Current Opening</a></li>
               <li><a href="#" class="hover:text-white transition-colors hoverable">Privacy Policy</a></li>
             </ul>
           </div>
@@ -312,6 +309,62 @@
     </div>
   </footer>
 
+  <!-- Job Application Modal -->
+  <div id="applyModal" class="fixed inset-0 z-100 flex items-center justify-center p-4 opacity-0 pointer-events-none bg-brand-bg/80 backdrop-blur-xl transition-all duration-500">
+    <div class="glass w-full max-w-2xl p-8 md:p-12 rounded-4xl relative transform scale-95 transition-all duration-500 overflow-y-auto max-h-[90vh]">
+      <button id="closeModal" class="absolute top-6 right-6 w-10 h-10 flex items-center justify-center rounded-full border border-white/10 text-white/50 hover:text-white hover:border-white/30 transition-all hoverable">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <div class="mb-10 text-center">
+        <span class="font-space text-brand-pink text-[10px] tracking-widest uppercase mb-4 block font-bold">Apply Now</span>
+        <h2 id="modalTitle" class="font-space text-4xl font-bold uppercase tracking-tighter text-white">Application Form.</h2>
+        <p class="font-inter text-white/40 mt-4">Join our team of architects and visionaries.</p>
+      </div>
+
+      <form class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label class="font-space text-[10px] uppercase tracking-widest text-white/50 block ml-4">Full Name</label>
+            <input type="text" placeholder="John Doe" class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 font-inter text-white focus:outline-none focus:border-brand-pink/50 transition-colors">
+          </div>
+          <div class="space-y-2">
+            <label class="font-space text-[10px] uppercase tracking-widest text-white/50 block ml-4">Email Address</label>
+            <input type="email" placeholder="john@example.com" class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 font-inter text-white focus:outline-none focus:border-brand-pink/50 transition-colors">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label class="font-space text-[10px] uppercase tracking-widest text-white/50 block ml-4">Phone Number</label>
+            <input type="tel" placeholder="+1 (555) 000-0000" class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 font-inter text-white focus:outline-none focus:border-brand-pink/50 transition-colors">
+          </div>
+          <div class="space-y-2">
+            <label class="font-space text-[10px] uppercase tracking-widest text-white/50 block ml-4">Position Applying For</label>
+            <input id="positionInput" type="text" placeholder="Desired Role" class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 font-inter text-white focus:outline-none focus:border-brand-pink/50 transition-colors">
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label class="font-space text-[10px] uppercase tracking-widest text-white/50 block ml-4">Resume URL / Link</label>
+          <input type="url" placeholder="Link to your resume (Drive, Dropbox, etc.)" class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 font-inter text-white focus:outline-none focus:border-brand-pink/50 transition-colors">
+        </div>
+
+        <div class="space-y-2">
+          <label class="font-space text-[10px] uppercase tracking-widest text-white/50 block ml-4">Why Intelegencia?</label>
+          <textarea rows="4" placeholder="Tell us about yourself..." class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 font-inter text-white focus:outline-none focus:border-brand-pink/50 transition-colors resize-none"></textarea>
+        </div>
+
+        <button type="submit" class="w-full hoverable group inline-flex items-center justify-center gap-6 bg-white text-black font-space text-[12px] uppercase tracking-[0.4em] font-bold py-6 rounded-2xl hover:bg-brand-pink hover:text-white transition-all">
+          Submit Application
+          <div class="w-12 h-px bg-black/20 group-hover:bg-white transition-all"></div>
+        </button>
+      </form>
+    </div>
+  </div>
+
   <script src="./js/script.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -339,6 +392,67 @@
           duration: 1,
           ease: 'power3.out'
         });
+      });
+
+      // Modal Logic
+      const modal = document.getElementById('applyModal');
+      const modalContent = modal.querySelector('.glass');
+      const closeBtn = document.getElementById('closeModal');
+      const positionInput = document.getElementById('positionInput');
+      const modalTitle = document.getElementById('modalTitle');
+
+      const openModal = (role = '') => {
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        modal.classList.add('opacity-100', 'pointer-events-auto');
+        modalContent.classList.remove('scale-95');
+        modalContent.classList.add('scale-100');
+        
+        if (role) {
+          positionInput.value = role;
+          modalTitle.textContent = `Apply for ${role}`;
+        } else {
+          positionInput.value = '';
+          modalTitle.textContent = 'Application Form.';
+        }
+        
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeModal = () => {
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        modal.classList.remove('opacity-100', 'pointer-events-auto');
+        modalContent.classList.add('scale-95');
+        modalContent.classList.remove('scale-100');
+        document.body.style.overflow = '';
+      };
+
+      // Attach to all buttons
+      document.querySelectorAll('a[href="contact.html"]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          
+          // Try to find job title
+          let jobTitle = '';
+          const card = btn.closest('.group');
+          if (card) {
+            const h3 = card.querySelector('h3');
+            if (h3) jobTitle = h3.textContent;
+          }
+          
+          openModal(jobTitle);
+        });
+      });
+
+      closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      // Form submission (prevention)
+      modal.querySelector('form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you for your application! This is a demo.');
+        closeModal();
       });
     });
   </script>
