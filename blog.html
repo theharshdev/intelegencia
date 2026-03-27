@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth bg-brand-bg text-white">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insights & Blog - Intelegencia</title>
+  <meta name="description"
+    content="Latest news, insights, and thoughts on AI, automation, BPO, and global enterprise operations from Intelegencia leadership." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/output.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="font-inter antialiased overflow-x-hidden relative">
+  <div class="noise-bg"></div>
+
+  <!--  NAV  -->
+  <nav
+    class="fixed w-full z-50 top-0 px-6 py-6 flex justify-between items-center dark:mix-blend-difference pointer-events-auto border-b border-white/5 bg-brand-bg/20 backdrop-blur-md">
+    <div class="hoverable">
+      <a href="index.html" class="font-space text-xl font-bold tracking-widest uppercase">INTELEGENCIA</a>
+    </div>
+    <div class="hidden lg:flex space-x-8 font-space text-xs tracking-[0.2em] items-center text-white/50">
+      <a href="services.html" class="hoverable transition-colors hover:text-white">SERVICES</a>
+      <a href="portfolio.html" class="hoverable transition-colors hover:text-white">WORK</a>
+      <a href="about.html" class="hoverable transition-colors hover:text-white">STORY</a>
+      <a href="case-studies.html" class="hoverable transition-colors hover:text-white">CASE STUDIES</a>
+    </div>
+    <div class="hoverable flex items-center space-x-4">
+      <a href="contact.html"
+        class="font-space text-xs border border-white/20 rounded-full px-6 py-3 bg-white text-black hover:bg-transparent hover:text-white transition-all duration-300 uppercase tracking-widest">Connect</a>
+      <button id="themeToggle"
+        class="w-11 h-11 rounded-full border border-white/20 flex justify-center items-center overflow-hidden relative transition-colors hoverable group">
+        <svg
+          class="w-5 h-5 text-white absolute transition-all duration-500 transform scale-0 rotate-90 dark:scale-100 dark:rotate-0"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg
+          class="w-6 h-6 text-white absolute transition-all duration-500 transform scale-100 rotate-0 dark:scale-0 dark:-rotate-90"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="min-h-screen pt-24 pb-20">
+
+    <!-- PAGE HEADER -->
+    <section class="max-w-350 mx-auto px-4 sm:px-8 pt-16 pb-12 relative overflow-hidden text-reveal-block opacity-0">
+      <div
+        class="absolute top-0 left-0 w-full overflow-hidden opacity-[0.03] pointer-events-none select-none flex justify-center -z-10">
+        <span class="font-space font-bold text-[20vw] leading-none whitespace-nowrap">JOURNAL</span>
+      </div>
+
+      <div
+        class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-10 border-b border-white/10 pb-12">
+        <div>
+          <span class="font-space text-brand-purple text-[10px] tracking-[0.3em] uppercase block mb-4 font-bold">News &
+            Perspectives</span>
+          <h1 class="font-space text-6xl md:text-8xl font-bold uppercase tracking-tighter text-white leading-[0.85]">
+            Intelegencia <br />
+            <span class="text-brand-pink">Insights.</span>
+          </h1>
+        </div>
+        <div class="max-w-md">
+          <p class="font-inter text-white/60 text-base leading-relaxed">
+            Explore deep-dives into AI engineering, global BPO strategy, and operations scale. We share our thoughts on
+            the future of borderless business.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED POST (HERO) -->
+    <section class="max-w-350 mx-auto px-4 sm:px-8 pb-20 section-reveal opacity-0">
+      <a href="blog-detail.html"
+        class="group block relative w-full rounded-4xl overflow-hidden border border-white/10 bg-brand-bg shadow-2xl h-[600px]">
+        <div class="absolute inset-x-0 top-0 h-full lg:inset-y-0 lg:left-1/3 lg:w-2/3 lg:h-full z-0">
+          <img
+            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+            alt="Featured Article"
+            class="w-full h-full brightness-50 object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 grayscale group-hover:grayscale-0" />
+          <div class="absolute inset-0 bg-linear-to-t from-brand-bg via-brand-bg/80 to-transparent lg:hidden"></div>
+        </div>
+
+        <div
+          class="absolute inset-0 z-10 p-8 sm:p-12 lg:p-16 flex flex-col justify-end lg:justify-center w-full lg:w-1/2">
+          <div class="flex items-center gap-4 mb-6">
+            <span
+              class="px-3 py-1 rounded bg-brand-blue/20 border border-brand-blue/30 text-[9px] text-white uppercase tracking-widest font-bold backdrop-blur-sm">Artificial
+              Intelligence</span>
+            <span class="font-inter text-[10px] text-white/50 uppercase tracking-widest font-medium">9 min read</span>
+          </div>
+          <h2
+            class="font-space text-4xl md:text-5xl font-bold text-white uppercase tracking-tighter leading-none mb-6 group-hover:text-brand-blue transition-colors duration-300">
+            The Evolution of RAG Engineering in Enterprise Operations
+          </h2>
+          <p class="font-inter text-white/60 text-sm leading-relaxed mb-8 max-w-lg line-clamp-3">
+            Retrieval-Augmented Generation is moving from a buzzword to a mission-critical component of global data
+            pipelines. We look at how next-generation AI agents are reshaping customer success centers.
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full overflow-hidden border border-white/20">
+              <img src="https://www.intelegencia.com/sites/default/files/2024-06/Atin-Img.png" alt="Atin Amit"
+                class="w-full h-full object-cover grayscale" />
+            </div>
+            <div>
+              <p class="font-space text-[10px] uppercase font-bold text-white tracking-widest">Atin Amit</p>
+              <p class="font-inter text-[9px] text-white/40 uppercase tracking-[0.2em] mt-0.5">CTO • March 27, 2026</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- CATEGORIES NAV & POSTS GRID -->
+    <section class="max-w-350 mx-auto px-4 sm:px-8 pb-20">
+      <!-- Categories -->
+      <div class="flex flex-wrap items-center gap-4 border-b border-white/10 pb-8 mb-12 section-reveal opacity-0">
+        <span
+          class="font-space text-[10px] tracking-[0.2em] uppercase text-white/30 font-bold mr-4 block w-full sm:w-auto mb-2 sm:mb-0">Filter
+          By</span>
+        <button
+          class="px-5 py-2 rounded-full bg-white text-black font-space text-[10px] uppercase font-bold tracking-widest hoverable transition-colors">All
+          Topics</button>
+        <button
+          class="px-5 py-2 rounded-full border border-white/10 bg-white/5 text-white/70 font-space text-[10px] uppercase font-bold tracking-widest hover:border-brand-pink/50 hover:text-white transition-colors hoverable">AI
+          & Innovation</button>
+        <button
+          class="px-5 py-2 rounded-full border border-white/10 bg-white/5 text-white/70 font-space text-[10px] uppercase font-bold tracking-widest hover:border-brand-blue/50 hover:text-white transition-colors hoverable">Global
+          Operations</button>
+        <button
+          class="px-5 py-2 rounded-full border border-white/10 bg-white/5 text-white/70 font-space text-[10px] uppercase font-bold tracking-widest hover:border-brand-purple/50 hover:text-white transition-colors hoverable">Digital
+          Transformation</button>
+        <button
+          class="px-5 py-2 rounded-full border border-white/10 bg-white/5 text-white/70 font-space text-[10px] uppercase font-bold tracking-widest hover:border-white/50 hover:text-white transition-colors hoverable">Engineering</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12">
+
+        <!-- Card 1 -->
+        <article class="group section-reveal opacity-0 flex flex-col h-full stagger-item">
+          <a href="blog-detail.html"
+            class="block w-full aspect-4/3 rounded-2xl overflow-hidden relative mb-6 border border-white/10 shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Blog 1"
+              class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 grayscale group-hover:grayscale-0" />
+            <div
+              class="absolute inset-0 bg-brand-bg/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 rounded bg-white/10 backdrop-blur-md border border-white/20 text-[9px] text-white uppercase tracking-widest font-bold">Global
+                Operations</span>
+            </div>
+          </a>
+          <div class="flex-1 flex flex-col">
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-inter text-[10px] text-white/40 uppercase tracking-[0.2em]">March 15, 2026</span>
+              <span class="font-inter text-[10px] text-brand-pink uppercase tracking-widest font-medium">5 min
+                read</span>
+            </div>
+            <a href="blog-detail.html" class="block">
+              <h3
+                class="font-space text-2xl font-bold text-white uppercase tracking-tight leading-[1.1] mb-3 group-hover:text-brand-pink transition-colors">
+                Scaling BPO Beyond Traditional Boundaries
+              </h3>
+            </a>
+            <p class="font-inter text-xs text-white/50 leading-relaxed mb-6 line-clamp-3">
+              How nearshore sourcing and rapid infrastructure deployment are upending the traditional BPO models.
+              Discover strategies for managing resilient teams across timezones.
+            </p>
+            <div class="mt-auto flex items-center gap-3 pt-6 border-t border-white/10">
+              <div class="w-8 h-8 rounded-full bg-brand-pink/20 overflow-hidden border border-brand-pink/30">
+                <span
+                  class="w-full h-full flex items-center justify-center font-space text-xs text-brand-pink font-bold">MA</span>
+              </div>
+              <div>
+                <p class="font-space text-[9px] uppercase font-bold text-white tracking-widest">Mico Areglado</p>
+                <p class="font-inter text-[8px] text-white/40 uppercase tracking-[0.2em] mt-0.5">CRO & VP</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="group section-reveal opacity-0 flex flex-col h-full stagger-item">
+          <a href="blog-detail.html"
+            class="block w-full aspect-4/3 rounded-2xl overflow-hidden relative mb-6 border border-white/10 shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Blog 2"
+              class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 grayscale group-hover:grayscale-0" />
+            <div
+              class="absolute inset-0 bg-brand-bg/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 rounded bg-white/10 backdrop-blur-md border border-white/20 text-[9px] text-white uppercase tracking-widest font-bold">Digital
+                Transformation</span>
+            </div>
+          </a>
+          <div class="flex-1 flex flex-col">
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-inter text-[10px] text-white/40 uppercase tracking-[0.2em]">March 02, 2026</span>
+              <span class="font-inter text-[10px] text-brand-blue uppercase tracking-widest font-medium">12 min
+                read</span>
+            </div>
+            <a href="blog-detail.html" class="block">
+              <h3
+                class="font-space text-2xl font-bold text-white uppercase tracking-tight leading-[1.1] mb-3 group-hover:text-brand-blue transition-colors">
+                Zero Trust Architecture in Modern Cloud Deployments
+              </h3>
+            </a>
+            <p class="font-inter text-xs text-white/50 leading-relaxed mb-6 line-clamp-3">
+              Security is no longer a perimeter. In this deep dive, we explore why identity and access management needs
+              an overhaul from the ground up to support remote enterprise workforces.
+            </p>
+            <div class="mt-auto flex items-center gap-3 pt-6 border-t border-white/10">
+              <div class="w-8 h-8 rounded-full bg-brand-blue/20 overflow-hidden border border-brand-blue/30">
+                <span
+                  class="w-full h-full flex items-center justify-center font-space text-xs text-brand-blue font-bold">AT</span>
+              </div>
+              <div>
+                <p class="font-space text-[9px] uppercase font-bold text-white tracking-widest">Atin Amit</p>
+                <p class="font-inter text-[8px] text-white/40 uppercase tracking-[0.2em] mt-0.5">CTO</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="group section-reveal opacity-0 flex flex-col h-full stagger-item">
+          <a href="blog-detail.html"
+            class="block w-full aspect-4/3 rounded-2xl overflow-hidden relative mb-6 border border-white/10 shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Blog 3"
+              class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 grayscale group-hover:grayscale-0" />
+            <div
+              class="absolute inset-0 bg-brand-bg/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 rounded bg-white/10 backdrop-blur-md border border-white/20 text-[9px] text-white uppercase tracking-widest font-bold">Client
+                Success</span>
+            </div>
+          </a>
+          <div class="flex-1 flex flex-col">
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-inter text-[10px] text-white/40 uppercase tracking-[0.2em]">February 28, 2026</span>
+              <span class="font-inter text-[10px] text-brand-purple uppercase tracking-widest font-medium">4 min
+                read</span>
+            </div>
+            <a href="blog-detail.html" class="block">
+              <h3
+                class="font-space text-2xl font-bold text-white uppercase tracking-tight leading-[1.1] mb-3 group-hover:text-brand-purple transition-colors">
+                Data-Driven Models for Boosting Retention Rates
+              </h3>
+            </a>
+            <p class="font-inter text-xs text-white/50 leading-relaxed mb-6 line-clamp-3">
+              How our account management teams utilize predictive analytics to anticipate client needs and deliver
+              proactive solutions that reduce churn seamlessly.
+            </p>
+            <div class="mt-auto flex items-center gap-3 pt-6 border-t border-white/10">
+              <div class="w-8 h-8 rounded-full overflow-hidden border border-brand-purple/30">
+                <img src="https://www.intelegencia.com/sites/default/files/2024-06/varun.png"
+                  class="w-full h-full object-cover grayscale" alt="Varun Goel" />
+              </div>
+              <div>
+                <p class="font-space text-[9px] uppercase font-bold text-white tracking-widest">Varun Goel</p>
+                <p class="font-inter text-[8px] text-white/40 uppercase tracking-[0.2em] mt-0.5">AVP - Client Success
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 1 -->
+        <article class="group section-reveal opacity-0 flex flex-col h-full stagger-item">
+          <a href="blog-detail.html"
+            class="block w-full aspect-4/3 rounded-2xl overflow-hidden relative mb-6 border border-white/10 shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Blog 1"
+              class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 grayscale group-hover:grayscale-0" />
+            <div
+              class="absolute inset-0 bg-brand-bg/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 rounded bg-white/10 backdrop-blur-md border border-white/20 text-[9px] text-white uppercase tracking-widest font-bold">Global
+                Operations</span>
+            </div>
+          </a>
+          <div class="flex-1 flex flex-col">
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-inter text-[10px] text-white/40 uppercase tracking-[0.2em]">March 15, 2026</span>
+              <span class="font-inter text-[10px] text-brand-pink uppercase tracking-widest font-medium">5 min
+                read</span>
+            </div>
+            <a href="blog-detail.html" class="block">
+              <h3
+                class="font-space text-2xl font-bold text-white uppercase tracking-tight leading-[1.1] mb-3 group-hover:text-brand-pink transition-colors">
+                Scaling BPO Beyond Traditional Boundaries
+              </h3>
+            </a>
+            <p class="font-inter text-xs text-white/50 leading-relaxed mb-6 line-clamp-3">
+              How nearshore sourcing and rapid infrastructure deployment are upending the traditional BPO models.
+              Discover strategies for managing resilient teams across timezones.
+            </p>
+            <div class="mt-auto flex items-center gap-3 pt-6 border-t border-white/10">
+              <div class="w-8 h-8 rounded-full bg-brand-pink/20 overflow-hidden border border-brand-pink/30">
+                <span
+                  class="w-full h-full flex items-center justify-center font-space text-xs text-brand-pink font-bold">MA</span>
+              </div>
+              <div>
+                <p class="font-space text-[9px] uppercase font-bold text-white tracking-widest">Mico Areglado</p>
+                <p class="font-inter text-[8px] text-white/40 uppercase tracking-[0.2em] mt-0.5">CRO & VP</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="group section-reveal opacity-0 flex flex-col h-full stagger-item">
+          <a href="blog-detail.html"
+            class="block w-full aspect-4/3 rounded-2xl overflow-hidden relative mb-6 border border-white/10 shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Blog 2"
+              class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 grayscale group-hover:grayscale-0" />
+            <div
+              class="absolute inset-0 bg-brand-bg/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 rounded bg-white/10 backdrop-blur-md border border-white/20 text-[9px] text-white uppercase tracking-widest font-bold">Digital
+                Transformation</span>
+            </div>
+          </a>
+          <div class="flex-1 flex flex-col">
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-inter text-[10px] text-white/40 uppercase tracking-[0.2em]">March 02, 2026</span>
+              <span class="font-inter text-[10px] text-brand-blue uppercase tracking-widest font-medium">12 min
+                read</span>
+            </div>
+            <a href="blog-detail.html" class="block">
+              <h3
+                class="font-space text-2xl font-bold text-white uppercase tracking-tight leading-[1.1] mb-3 group-hover:text-brand-blue transition-colors">
+                Zero Trust Architecture in Modern Cloud Deployments
+              </h3>
+            </a>
+            <p class="font-inter text-xs text-white/50 leading-relaxed mb-6 line-clamp-3">
+              Security is no longer a perimeter. In this deep dive, we explore why identity and access management needs
+              an overhaul from the ground up to support remote enterprise workforces.
+            </p>
+            <div class="mt-auto flex items-center gap-3 pt-6 border-t border-white/10">
+              <div class="w-8 h-8 rounded-full bg-brand-blue/20 overflow-hidden border border-brand-blue/30">
+                <span
+                  class="w-full h-full flex items-center justify-center font-space text-xs text-brand-blue font-bold">AT</span>
+              </div>
+              <div>
+                <p class="font-space text-[9px] uppercase font-bold text-white tracking-widest">Atin Amit</p>
+                <p class="font-inter text-[8px] text-white/40 uppercase tracking-[0.2em] mt-0.5">CTO</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="group section-reveal opacity-0 flex flex-col h-full stagger-item">
+          <a href="blog-detail.html"
+            class="block w-full aspect-4/3 rounded-2xl overflow-hidden relative mb-6 border border-white/10 shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Blog 3"
+              class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 grayscale group-hover:grayscale-0" />
+            <div
+              class="absolute inset-0 bg-brand-bg/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 rounded bg-white/10 backdrop-blur-md border border-white/20 text-[9px] text-white uppercase tracking-widest font-bold">Client
+                Success</span>
+            </div>
+          </a>
+          <div class="flex-1 flex flex-col">
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-inter text-[10px] text-white/40 uppercase tracking-[0.2em]">February 28, 2026</span>
+              <span class="font-inter text-[10px] text-brand-purple uppercase tracking-widest font-medium">4 min
+                read</span>
+            </div>
+            <a href="blog-detail.html" class="block">
+              <h3
+                class="font-space text-2xl font-bold text-white uppercase tracking-tight leading-[1.1] mb-3 group-hover:text-brand-purple transition-colors">
+                Data-Driven Models for Boosting Retention Rates
+              </h3>
+            </a>
+            <p class="font-inter text-xs text-white/50 leading-relaxed mb-6 line-clamp-3">
+              How our account management teams utilize predictive analytics to anticipate client needs and deliver
+              proactive solutions that reduce churn seamlessly.
+            </p>
+            <div class="mt-auto flex items-center gap-3 pt-6 border-t border-white/10">
+              <div class="w-8 h-8 rounded-full overflow-hidden border border-brand-purple/30">
+                <img src="https://www.intelegencia.com/sites/default/files/2024-06/varun.png"
+                  class="w-full h-full object-cover grayscale" alt="Varun Goel" />
+              </div>
+              <div>
+                <p class="font-space text-[9px] uppercase font-bold text-white tracking-widest">Varun Goel</p>
+                <p class="font-inter text-[8px] text-white/40 uppercase tracking-[0.2em] mt-0.5">AVP - Client Success
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+      </div>
+    </section>
+
+    <!-- NEWSLETTER CTA -->
+    <section class="max-w-350 mx-auto px-4 sm:px-8 pb-10 section-reveal opacity-0">
+      <div
+        class="w-full rounded-4xl border border-white/10 bg-white/5 backdrop-blur-sm p-12 md:p-20 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+          <div
+            class="absolute top-0 right-0 w-[60%] h-[150%] bg-brand-pink/10 rounded-full blur-[100px] -translate-y-1/4 translate-x-1/4">
+          </div>
+        </div>
+
+        <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+          <div class="max-w-lg text-center lg:text-left">
+            <h2 class="font-space font-bold text-3xl md:text-5xl uppercase tracking-tighter text-white mb-4">Stay Ahead
+              of The Curve.</h2>
+            <p class="font-inter text-white/60 text-sm leading-relaxed">Join 15,000+ industry leaders who receive our
+              monthly synthesis of actionable strategy, technical deep-dives, and enterprise scale tactics.</p>
+          </div>
+
+          <div class="w-full lg:w-96 flex flex-col gap-3">
+            <div class="relative">
+              <input type="email" placeholder="ENTER YOUR EMAIL"
+                class="w-full bg-brand-bg/50 border border-white/20 rounded-full px-6 py-4 font-space text-[10px] uppercase tracking-widest text-white placeholder-white/30 focus:outline-none focus:border-brand-pink/50 transition-colors">
+              <button
+                class="absolute right-2 top-2 bottom-2 bg-white text-black font-space text-[10px] uppercase font-bold tracking-widest px-6 rounded-full hover:bg-brand-pink hover:text-white transition-colors hoverable">Subscribe</button>
+            </div>
+            <p class="font-inter text-[9px] text-white/30 tracking-widest text-center lg:text-left">NO SPAM. UNSUBSCRIBE
+              ANYTIME.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="max-w-350 mx-auto px-4 sm:px-8 pb-20">
+      <div
+        class="relative w-full rounded-4xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm p-10 md:p-20 section-reveal opacity-0">
+        <!-- Decorative Quote Mark -->
+        <div class="absolute top-10 right-10 opacity-10 pointer-events-none select-none">
+          <span class="font-space font-bold text-[15rem] leading-none text-brand-blue">"</span>
+        </div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-8">
+            <div class="flex items-center gap-3 mb-8">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-pink animate-pulse"></span>
+              <span class="font-space text-[10px] tracking-[0.3em] uppercase text-brand-pink font-bold">Client
+                Story</span>
+            </div>
+            <blockquote
+              class="font-inter text-2xl md:text-4xl text-white font-light tracking-tight leading-relaxed mb-10">
+              "Intelegencia’s insights into AI and BPO operations completely reshaped our global scaling strategy. Their
+              thought leadership is matched only by their execution."
+            </blockquote>
+            <div>
+              <p class="font-space text-lg font-bold text-white uppercase tracking-widest">James Harrison</p>
+              <p class="font-inter text-xs text-white/50 uppercase tracking-[0.2em] mt-1">Chief Operations Officer,
+                TechStack Global</p>
+            </div>
+          </div>
+          <div class="lg:col-span-4 flex justify-center lg:justify-end">
+            <div
+              class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-brand-pink/30 p-2 shadow-2xl relative group">
+              <div
+                class="absolute inset-0 bg-brand-pink/20 rounded-full animate-ping opacity-20 group-hover:opacity-0 transition-opacity">
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="James Harrison"
+                class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-700" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="max-w-350 mx-auto px-4 sm:px-8">
+      <div
+        class="relative rounded-3xl border border-white/10 overflow-hidden bg-brand-blue/5 backdrop-blur-sm p-12 md:p-20 text-center section-reveal opacity-0">
+        <div class="absolute inset-0 pointer-events-none">
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-brand-blue/20 rounded-full blur-[120px]">
+          </div>
+        </div>
+        <h2
+          class="font-space font-bold text-4xl md:text-6xl uppercase tracking-tighter text-white leading-[0.9] mb-8 relative z-10">
+          Ready to Transform
+          <br />
+          <span class="bg-linear-to-r from-brand-blue via-brand-purple to-brand-pink bg-clip-text text-transparent">Your
+            Operations?</span>
+        </h2>
+        <p class="font-inter text-white/60 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-10 relative z-10">
+          Let's discuss how our engineering teams and global BPO infrastructure can accelerate your business growth.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center relative z-10">
+          <a href="contact.html"
+            class="hoverable font-space text-xs uppercase tracking-widest bg-white text-black px-10 py-4 rounded-full hover:bg-brand-blue hover:text-white transition-all duration-300 font-bold shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+            Partner With Us
+          </a>
+          <a href="services.html"
+            class="hoverable font-space text-xs uppercase tracking-widest border border-white/20 text-white px-10 py-4 rounded-full hover:border-white/60 transition-all duration-300">
+            Explore Services &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-24 px-4 sm:px-8 border-t border-white/10 relative z-20 bg-brand-bg overflow-hidden mt-16">
+    <div
+      class="absolute top-0 left-0 w-full overflow-hidden opacity-5 pointer-events-none select-none flex justify-center">
+      <span class="font-space font-bold text-[15vw] leading-none whitespace-nowrap">INTELEGENCIA</span>
+    </div>
+    <div class="max-w-350 mx-auto relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-24">
+        <div class="lg:col-span-4">
+          <a href="index.html" class="font-space text-3xl font-bold tracking-widest uppercase block mb-6">
+            INTELEGENCIA<span class="text-brand-pink">.</span>
+          </a>
+          <p class="font-inter text-white/50 text-sm mb-12 uppercase tracking-widest max-w-50">
+            Delivering Excellence Across the Globe
+          </p>
+          <div class="space-y-8 font-inter text-sm text-white/60">
+            <div>
+              <h4
+                class="text-white font-space uppercase tracking-widest text-xs mb-3 border-b border-white/10 pb-2 inline-block w-full">
+                U.S.A.</h4>
+              <p>PH 40 West Evergreen Ave,<br />Suite 101A, Philadelphia, PA 19118</p>
+            </div>
+            <div>
+              <h4
+                class="text-white font-space uppercase tracking-widest text-xs mb-3 border-b border-white/10 pb-2 inline-block w-full">
+                INDIA</h4>
+              <p class="mb-4">A-21, Lohia Rd, A Block, Sector 63,<br />Noida, Uttar Pradesh 201301</p>
+              <p>KTC Illumination, First Floor, Gafoor Nagar,<br />Madhapur, Hyderabad, Telangana 500081</p>
+            </div>
+            <div>
+              <h4
+                class="text-white font-space uppercase tracking-widest text-xs mb-3 border-b border-white/10 pb-2 inline-block w-full">
+                PHILIPPINES</h4>
+              <p class="mb-3">OTC Building, Sumulong Highway,<br />Antipolo City, Rizal 1870</p>
+              <p class="mb-3">ECC Building, Matatalaib,<br />Tarlac City, Philippines 2300</p>
+              <p>Exquadra Tower, Jade drive,<br />Ortigas, Pasig City, 1603</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Company</h4>
+            <ul class="space-y-3 font-inter text-sm text-white/50">
+              <li><a href="index.html" class="hover:text-white transition-colors hoverable">Home</a></li>
+              <li><a href="blog.html" class="hover:text-white transition-colors hoverable text-white">Blogs</a></li>
+              <li><a href="case-studies.html" class="hover:text-white transition-colors hoverable">Case Studies</a></li>
+              <li><a href="services.html" class="hover:text-white transition-colors hoverable">Services</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">About Us</h4>
+            <ul class="space-y-3 font-inter text-sm text-white/50">
+              <li><a href="about.html" class="hover:text-white transition-colors hoverable">Our Story</a></li>
+              <li><a href="location.html" class="hover:text-white transition-colors hoverable">Our Location</a></li>
+              <li><a href="leadership.html" class="hover:text-white transition-colors hoverable">Our Leadership</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Explore</h4>
+            <ul class="space-y-3 font-inter text-sm text-white/50">
+              <li><a href="career.html" class="hover:text-white transition-colors hoverable">Career</a></li>
+              <li><a href="culture.html" class="hover:text-white transition-colors hoverable">Our Culture</a></li>
+              <li><a href="privacy.html" class="hover:text-white transition-colors hoverable">Privacy Policy</a></li>
+              <li><a href="disclaimer.html" class="hover:text-white transition-colors hoverable">Disclaimer</a></li>
+              <li><a href="cookie-policy.html" class="hover:text-white transition-colors hoverable">Cookie Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Engagement</h4>
+            <ul class="space-y-3 font-inter text-sm text-white/50 leading-relaxed">
+              <li><a href="services.html" class="hover:text-white transition-colors hoverable">App & Engineering</a>
+              </li>
+              <li><a href="services.html" class="hover:text-white transition-colors hoverable">Digital Marketing</a>
+              </li>
+              <li><a href="services.html" class="hover:text-white transition-colors hoverable">Customer Service &
+                  BPO</a></li>
+              <!-- Removed Legal Link -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-white/30 text-xs font-space tracking-widest uppercase">
+        <p>© 2026 INTELEGENCIA TECHNOLOGIES CORPORATION. ALL RIGHTS RESERVED.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0 items-center">
+          <a href="#" class="hoverable hover:text-white transition-colors">TWITTER</a>
+          <a href="#" class="hoverable hover:text-white transition-colors">LINKEDIN</a>
+          <a href="#" class="hoverable hover:text-white transition-colors">FACEBOOK</a>
+          <a href="#" class="hoverable hover:text-white transition-colors">INSTAGRAM</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.set(".text-reveal-block", { opacity: 0, y: 50 });
+      gsap.set(".section-reveal", { opacity: 0, y: 30 });
+
+      gsap.to(".text-reveal-block", {
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        ease: "power4.out",
+        delay: 0.2,
+      });
+
+      const sections = document.querySelectorAll(".section-reveal");
+      sections.forEach((section) => {
+        gsap.fromTo(
+          section,
+          { opacity: 0, y: 30 },
+          {
+            scrollTrigger: {
+              trigger: section,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power3.out",
+          }
+        );
+      });
+
+      const staggerItems = document.querySelectorAll(".stagger-item");
+      if (staggerItems.length > 0) {
+        gsap.fromTo(
+          staggerItems,
+          { opacity: 0, y: 20 },
+          {
+            scrollTrigger: {
+              trigger: staggerItems[0].parentElement,
+              start: "top 85%",
+            },
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: 0.15,
+            ease: "power2.out",
+          }
+        );
+      }
+    });
+  </script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

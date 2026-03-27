@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth bg-brand-bg text-white">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Global Locations - Intelegencia</title>
+  <meta name="description"
+    content="Discover Intelegencia's global footprint. From North America to Asia-Pacific, our offices support enterprise operations 24/7." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/output.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+    /* Custom styling for maps to fit dark mode better */
+    .dark-map {
+      filter: grayscale(80%) invert(90%) contrast(1.2) hue-rotate(180deg);
+      border-radius: 2rem;
+    }
+  </style>
+</head>
+
+<body class="font-inter antialiased overflow-x-hidden relative">
+  <div class="noise-bg"></div>
+
+  <!--  NAV  -->
+  <nav
+    class="fixed w-full z-50 top-0 px-6 py-6 flex justify-between items-center dark:mix-blend-difference pointer-events-auto border-b border-white/5 bg-brand-bg/20 backdrop-blur-md">
+    <div class="hoverable">
+      <a href="index.html" class="font-space text-xl font-bold tracking-widest uppercase">INTELEGENCIA</a>
+    </div>
+    <div class="hidden lg:flex space-x-8 font-space text-xs tracking-[0.2em] items-center text-white/50">
+      <a href="services.html" class="hoverable transition-colors hover:text-white">SERVICES</a>
+      <a href="portfolio.html" class="hoverable transition-colors hover:text-white">WORK</a>
+      <a href="about.html" class="hoverable transition-colors hover:text-white">STORY</a>
+      <a href="case-studies.html" class="hoverable transition-colors hover:text-white">CASE STUDIES</a>
+    </div>
+    <div class="hoverable flex items-center space-x-4">
+      <a href="contact.html"
+        class="font-space text-xs border border-white/20 rounded-full px-6 py-3 bg-white text-black hover:bg-transparent hover:text-white transition-all duration-300 uppercase tracking-widest">Connect</a>
+      <button id="themeToggle"
+        class="w-11 h-11 rounded-full border border-white/20 flex justify-center items-center overflow-hidden relative transition-colors hoverable group">
+        <svg
+          class="w-5 h-5 text-white absolute transition-all duration-500 transform scale-0 rotate-90 dark:scale-100 dark:rotate-0"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg
+          class="w-6 h-6 text-white absolute transition-all duration-500 transform scale-100 rotate-0 dark:scale-0 dark:-rotate-90"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="min-h-screen pt-24 pb-20">
+
+    <!-- HERO SECTION -->
+    <section class="max-w-350 mx-auto px-4 sm:px-8 pt-24 pb-16 relative overflow-hidden text-reveal-block opacity-0">
+      <div
+        class="absolute top-0 left-0 w-full overflow-hidden opacity-[0.03] pointer-events-none select-none flex justify-center -z-10">
+        <span class="font-space font-bold text-[20vw] leading-none whitespace-nowrap">GLOBAL</span>
+      </div>
+
+      <!-- Glowing backdrop for hero -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] bg-brand-blue/10 rounded-full blur-[150px] pointer-events-none -z-10"></div>
+
+      <div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-16 border-b border-white/10 pb-16 pt-10">
+        <div class="flex-1">
+          <span class="font-space text-brand-blue text-[10px] tracking-[0.3em] uppercase block mb-6 font-bold">Our Reach</span>
+          <h1 class="font-space text-6xl md:text-8xl lg:text-[8rem] font-bold uppercase tracking-tighter text-white leading-[0.85]">
+            Borderless <br />
+            <span class="bg-linear-to-r from-brand-blue via-brand-purple to-brand-pink bg-clip-text text-transparent pb-4 block">Scale.</span>
+          </h1>
+        </div>
+        <div class="max-w-lg mb-4">
+          <p class="font-inter text-white/50 text-base md:text-lg leading-relaxed mb-8 font-light">
+            We operate across 4 major global hubs—from strategists in North America to engineering powerhouses in India and massive operational delivery centers across the Philippines. With over a decade of borderless excellence, we bring enterprise solutions directly to 24+ countries around the clock.
+          </p>
+          <div class="flex items-center gap-6 text-white font-space text-[10px] uppercase tracking-[0.2em] cursor-pointer opacity-40">
+            <span>Scroll below to explore</span>
+            <div class="flex-1 h-px bg-white/30"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS RIBBON -->
+    <section class="max-w-350 mx-auto px-4 sm:px-8 pb-24 section-reveal opacity-0">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 overflow-hidden border border-white/10 rounded-4xl">
+        <div class="bg-brand-bg py-16 px-8 text-center flex flex-col items-center justify-center hover:bg-white/5 transition-colors duration-500">
+          <span class="font-space text-5xl lg:text-6xl font-bold text-white mb-4">3</span>
+          <span class="font-inter text-[10px] uppercase tracking-[0.2em] text-brand-blue font-bold">Continents</span>
+        </div>
+        <div class="bg-brand-bg py-16 px-8 text-center flex flex-col items-center justify-center hover:bg-white/5 transition-colors duration-500">
+          <span class="font-space text-5xl lg:text-6xl font-bold text-white mb-4">4,000+</span>
+          <span class="font-inter text-[10px] uppercase tracking-[0.2em] text-brand-purple font-bold">Professionals</span>
+        </div>
+        <div class="bg-brand-bg py-16 px-8 text-center flex flex-col items-center justify-center hover:bg-white/5 transition-colors duration-500">
+          <span class="font-space text-5xl lg:text-6xl font-bold text-white mb-4">24/7</span>
+          <span class="font-inter text-[10px] uppercase tracking-[0.2em] text-brand-pink font-bold">Operations</span>
+        </div>
+        <div class="bg-brand-bg py-16 px-8 text-center flex flex-col items-center justify-center hover:bg-white/5 transition-colors duration-500">
+          <span class="font-space text-5xl lg:text-6xl font-bold text-white mb-4">24+</span>
+          <span class="font-inter text-[10px] uppercase tracking-[0.2em] text-white/50 font-bold">Countries Served</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFICE DIRECTORY -->
+    <section class="max-w-350 mx-auto px-4 sm:px-8 pb-24">
+      <div class="space-y-32">
+        
+        <!-- Region: USA -->
+        <div class="section-reveal opacity-0">
+          <div class="flex items-center justify-between gap-6 border-b border-white/10 pb-8 mb-16">
+             <div class="flex items-center gap-6">
+                <span class="flex items-center justify-center w-6 h-6 rounded-full border border-brand-blue/30 relative">
+                  <span class="absolute w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
+                </span>
+                <h2 class="font-space text-4xl md:text-6xl font-bold text-white uppercase tracking-tighter">North America</h2>
+             </div>
+             <div class="hidden md:block">
+                <span class="font-space text-brand-blue text-[10px] tracking-[0.3em] uppercase font-bold px-4 py-2 border border-brand-blue/20 rounded-full">HQ Region</span>
+             </div>
+          </div>
+          
+          <div class="grid grid-cols-1 xl:grid-cols-12 gap-16 xl:gap-24 items-start">
+            <div class="xl:col-span-4 flex flex-col mt-4">
+              <h3 class="font-space text-3xl font-bold text-white uppercase mb-4">Philadelphia</h3>
+              <p class="font-inter text-[11px] text-brand-blue uppercase tracking-widest font-bold mb-8">Global Headquarters</p>
+              
+              <div class="space-y-6 form-inter text-white/60 text-base leading-relaxed mb-10 pl-4 border-l-2 border-brand-blue/30">
+                <p>
+                  Nestled in the historical depths of Philadelphia, our North American headquarters serves as our central nervous system. 
+                </p>
+                <p>
+                  From enterprise strategy to executive leadership, this primary office bridges the critical gap between our global delivery engines and our expansive North American client base.
+                </p>
+              </div>
+              
+              <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
+                 <p class="font-space text-[10px] text-white/40 uppercase tracking-[0.2em] mb-4">Visit Us</p>
+                 <address class="not-italic font-inter text-white/90 text-sm leading-relaxed mb-6">
+                   PH 40 West Evergreen Ave,<br />
+                   Suite 101A,<br />
+                   Philadelphia, PA 19118
+                 </address>
+                 <a href="https://maps.google.com/?q=40+W+Evergreen+Ave,+Philadelphia" target="_blank" class="inline-flex items-center gap-2 font-space text-[10px] uppercase text-white hover:text-brand-blue transition-colors font-bold tracking-widest border-b border-white/20 pb-1">
+                   Get Directions &rarr;
+                 </a>
+              </div>
+            </div>
+            
+            <div class="xl:col-span-8 grid sm:grid-cols-2 gap-6 relative">
+              <div class="relative rounded-4xl overflow-hidden aspect-4/5 sm:aspect-square border border-white/10 shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="USA Headquarters" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
+                <div class="absolute inset-0 bg-brand-bg/40 hover:bg-transparent transition-colors duration-500 pointer-events-none"></div>
+              </div>
+              
+              <div class="relative rounded-4xl overflow-hidden aspect-4/5 sm:aspect-square border border-white/10 shadow-2xl bg-white/5">
+                <iframe 
+                  src="https://maps.google.com/maps?q=40%20W%20Evergreen%20Ave,%20Philadelphia,%20PA%2019118&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade" 
+                  class="dark-map">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Region: INDIA -->
+        <div class="section-reveal opacity-0">
+          <div class="flex items-center justify-between gap-6 border-b border-white/10 pb-8 mb-16">
+             <div class="flex items-center gap-6">
+                <span class="flex items-center justify-center w-6 h-6 rounded-full border border-brand-purple/30 relative">
+                  <span class="absolute w-2 h-2 rounded-full bg-brand-purple animate-pulse"></span>
+                </span>
+                <h2 class="font-space text-4xl md:text-6xl font-bold text-white uppercase tracking-tighter">India</h2>
+             </div>
+             <div class="hidden md:block">
+                <span class="font-space text-brand-purple text-[10px] tracking-[0.3em] uppercase font-bold px-4 py-2 border border-brand-purple/20 rounded-full">Engineering Hubs</span>
+             </div>
+          </div>
+          
+          <div class="grid grid-cols-1 xl:grid-cols-12 gap-16 xl:gap-24 items-start">
+            
+            <div class="xl:col-span-8 lg:order-2 grid sm:grid-cols-2 gap-6 relative">
+              <div class="relative rounded-4xl overflow-hidden aspect-4/5 sm:aspect-square border border-white/10 shadow-2xl bg-white/5">
+                 <iframe 
+                  src="https://maps.google.com/maps?q=Sector%2063,%20Noida,%20Uttar%20Pradesh&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade" 
+                  class="dark-map">
+                </iframe>
+              </div>
+              <div class="relative rounded-4xl overflow-hidden aspect-4/5 sm:aspect-square border border-white/10 shadow-2xl bg-white/5">
+                 <!-- Map for Hyderabad -->
+                 <iframe 
+                  src="https://maps.google.com/maps?q=Madhapur,%20Hyderabad,%20Telangana&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade" 
+                  class="dark-map">
+                </iframe>
+              </div>
+            </div>
+
+            <div class="xl:col-span-4 lg:order-1 flex flex-col mt-4 space-y-12">
+              
+              <!-- Location 1 -->
+              <div>
+                <h3 class="font-space text-3xl font-bold text-white uppercase mb-4">Noida</h3>
+                <p class="font-inter text-[11px] text-brand-purple uppercase tracking-widest font-bold mb-6">R&D and Delivery Center</p>
+                
+                <p class="font-inter text-white/50 text-sm leading-relaxed mb-8 pl-4 border-l-2 border-brand-purple/30">
+                  Located in one of India's premier tech and IT zones, our Noida center drives heavy software architectures, AI instrumentation, and custom product development for global portfolios.
+                </p>
+                
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
+                   <p class="font-space text-[10px] text-white/40 uppercase tracking-[0.2em] mb-4">Visit Us</p>
+                   <address class="not-italic font-inter text-white/90 text-sm leading-relaxed mb-6">
+                     A-21, Lohia Rd, A Block,<br />
+                     Sector 63, Noida,<br />
+                     Uttar Pradesh 201301
+                   </address>
+                </div>
+              </div>
+
+              <!-- Location 2 -->
+              <div>
+                <h3 class="font-space text-3xl font-bold text-white uppercase mb-4">Hyderabad</h3>
+                <p class="font-inter text-[11px] text-brand-purple uppercase tracking-widest font-bold mb-6">Innovation & Scale</p>
+                
+                <p class="font-inter text-white/50 text-sm leading-relaxed mb-8 pl-4 border-l-2 border-brand-purple/30">
+                  Sitting in the heart of "Cyberabad," our Hyderabad office acts as a pivotal node for massive scale IT infrastructure and technical operations support, leveraging top-tier tech talent.
+                </p>
+
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
+                   <p class="font-space text-[10px] text-white/40 uppercase tracking-[0.2em] mb-4">Visit Us</p>
+                   <address class="not-italic font-inter text-white/90 text-sm leading-relaxed mb-6">
+                     KTC Illumination, First Floor,<br />
+                     Gafoor Nagar, Madhapur,<br />
+                     Hyderabad, Telangana 500081
+                   </address>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Region: PHILIPPINES -->
+        <div class="section-reveal opacity-0">
+          <div class="flex items-center justify-between gap-6 border-b border-white/10 pb-8 mb-16">
+             <div class="flex items-center gap-6">
+                <span class="flex items-center justify-center w-6 h-6 rounded-full border border-brand-pink/30 relative">
+                  <span class="absolute w-2 h-2 rounded-full bg-brand-pink animate-pulse"></span>
+                </span>
+                <h2 class="font-space text-4xl md:text-6xl font-bold text-white uppercase tracking-tighter">Philippines</h2>
+             </div>
+             <div class="hidden md:block">
+                <span class="font-space text-brand-pink text-[10px] tracking-[0.3em] uppercase font-bold px-4 py-2 border border-brand-pink/20 rounded-full">BPO & Support Hubs</span>
+             </div>
+          </div>
+          
+          <div class="grid grid-cols-1 xl:grid-cols-12 gap-16 xl:gap-24 items-start">
+            
+            <div class="xl:col-span-4 flex flex-col mt-4">
+              <div class="space-y-6 form-inter text-white/60 text-base leading-relaxed mb-12 border-b border-white/10 pb-12">
+                <p>
+                  As the undisputed heartland of global BPO, the Philippines provides Intelegencia's clients with world-class support.
+                </p>
+                <p class="font-light italic text-white/50">
+                  Our strategic multi-city dominance ensures uninterrupted uptime, robust disaster recovery capability, and talent access ranging from customer success to technical troubleshooting.
+                </p>
+              </div>
+              
+              <div class="space-y-6">
+                <!-- Location 1 -->
+                <div class="group relative bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm hover:border-brand-pink/50 transition-colors duration-500 overflow-hidden">
+                   <div class="absolute inset-x-0 bottom-0 h-1 bg-brand-pink opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                   <h3 class="font-space text-xl font-bold text-white uppercase mb-2">Pasig City</h3>
+                   <p class="font-inter text-[9px] text-brand-pink uppercase tracking-[0.2em] font-bold mb-4">Corporate Center</p>
+                   <address class="not-italic font-inter text-white/70 text-sm leading-relaxed">
+                     Exquadra Tower, Jade drive,<br />
+                     Ortigas, Pasig City, 1603
+                   </address>
+                </div>
+                
+                <!-- Location 2 -->
+                <div class="group relative bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm hover:border-brand-pink/50 transition-colors duration-500 overflow-hidden">
+                   <div class="absolute inset-x-0 bottom-0 h-1 bg-brand-pink opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                   <h3 class="font-space text-xl font-bold text-white uppercase mb-2">Antipolo City</h3>
+                   <p class="font-inter text-[9px] text-brand-pink uppercase tracking-[0.2em] font-bold mb-4">Operations Base</p>
+                   <address class="not-italic font-inter text-white/70 text-sm leading-relaxed">
+                     OTC Building, Sumulong Highway,<br />
+                     Antipolo City, Rizal 1870
+                   </address>
+                </div>
+
+                <!-- Location 3 -->
+                <div class="group relative bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm hover:border-brand-pink/50 transition-colors duration-500 overflow-hidden">
+                   <div class="absolute inset-x-0 bottom-0 h-1 bg-brand-pink opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                   <h3 class="font-space text-xl font-bold text-white uppercase mb-2">Tarlac City</h3>
+                   <p class="font-inter text-[9px] text-brand-pink uppercase tracking-[0.2em] font-bold mb-4">Support Hub</p>
+                   <address class="not-italic font-inter text-white/70 text-sm leading-relaxed">
+                     ECC Building, Matatalaib,<br />
+                     Tarlac City, Philippines 2300
+                   </address>
+                </div>
+              </div>
+            </div>
+
+            <div class="xl:col-span-8 grid md:grid-cols-2 gap-6 relative">
+              <div class="md:col-span-2 relative rounded-4xl overflow-hidden aspect-video border border-white/10 shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1800&q=80" alt="Philippines BPO" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
+                <div class="absolute inset-0 bg-brand-bg/20 hover:bg-transparent transition-colors duration-500 pointer-events-none"></div>
+              </div>
+
+               <div class="relative rounded-4xl overflow-hidden aspect-4/3 border border-white/10 shadow-2xl bg-white/5">
+                 <!-- Map for Pasig City -->
+                 <iframe 
+                  src="https://maps.google.com/maps?q=Ortigas%20Center,%20Pasig,%20Philippines&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade" 
+                  class="dark-map">
+                </iframe>
+              </div>
+
+               <div class="relative rounded-4xl overflow-hidden aspect-4/3 border border-white/10 shadow-2xl bg-white/5">
+                 <!-- Map for Antipolo -->
+                 <iframe 
+                  src="https://maps.google.com/maps?q=Antipolo,%20Rizal,%20Philippines&t=&z=12&ie=UTF8&iwloc=&output=embed" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade" 
+                  class="dark-map">
+                </iframe>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CAREERS SECTION -->
+    <section class="max-w-350 mx-auto px-4 sm:px-8 pb-32">
+       <div class="grid lg:grid-cols-2 gap-16 items-center section-reveal opacity-0">
+         <div>
+            <span class="font-space text-brand-pink text-[10px] tracking-[0.3em] uppercase font-bold block mb-6">Join The Team</span>
+            <h2 class="font-space text-4xl md:text-6xl font-bold uppercase tracking-tighter text-white mb-8">Work Where <br /> You Thrive.</h2>
+            <p class="font-inter text-white/50 text-base md:text-lg leading-relaxed mb-10 font-light border-l border-brand-pink/30 pl-6">
+              With offices spanning across North America, India, and the Philippines, Intelegencia offers unparalleled opportunities for career growth on a global scale. We're actively hiring engineers, customer success specialists, and operations leaders to join our teams across all locations.
+            </p>
+            <div class="flex flex-wrap gap-4 mb-10">
+               <span class="bg-white/5 border border-white/10 rounded-full px-4 py-2 text-xs font-space uppercase tracking-widest text-white/70">Remote Options</span>
+               <span class="bg-white/5 border border-white/10 rounded-full px-4 py-2 text-xs font-space uppercase tracking-widest text-white/70">Relocation Support</span>
+               <span class="bg-white/5 border border-white/10 rounded-full px-4 py-2 text-xs font-space uppercase tracking-widest text-white/70">Global Mobility</span>
+            </div>
+            <a href="career.html" class="inline-flex items-center gap-3 font-space text-sm uppercase tracking-widest text-white hover:text-brand-pink transition-colors font-bold border-b border-brand-pink/30 pb-2 hoverable">
+              Explore Open Roles <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </a>
+         </div>
+         <div class="relative">
+            <div class="absolute -inset-4 bg-brand-pink/10 rounded-4xl blur-xl z-0 pointer-events-none"></div>
+            <div class="relative z-10 rounded-4xl overflow-hidden aspect-square md:aspect-video lg:aspect-4/5 border border-white/10">
+               <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Team Working" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
+               <div class="absolute inset-0 bg-brand-bg/20"></div>
+            </div>
+         </div>
+       </div>
+    </section>
+
+    <!-- MAP / GLOBAL FOOTPRINT -->
+    <section class="max-w-350 mx-auto px-4 sm:px-8 pb-24">
+       <div class="w-full bg-linear-to-b from-brand-blue/10 to-brand-bg border border-white/10 rounded-4xl p-12 md:p-24 relative overflow-hidden flex flex-col items-center justify-center text-center section-reveal opacity-0">
+          <div class="absolute inset-0 z-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+          
+          <span class="font-space text-brand-blue text-[10px] tracking-[0.4em] uppercase font-bold block mb-8 relative z-10">Global Operations</span>
+          <h2 class="font-space font-bold text-5xl md:text-8xl uppercase tracking-tighter text-white leading-none relative z-10 mb-10">
+            One World.<br />
+            <span class="text-white/20">Zero Boundaries.</span>
+          </h2>
+          
+          <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto relative z-10 mb-16 text-left">
+             <div class="bg-brand-bg/50 backdrop-blur-md border border-white/5 rounded-3xl p-8 hover:bg-white/5 transition-colors duration-500">
+               <h3 class="font-space text-xl font-bold text-white uppercase mb-3">Enterprise Scale</h3>
+               <p class="font-inter text-white/50 text-sm leading-relaxed">From Fortune 500 integrations to mid-market hyper-growth support, our global hubs are equipped to rapidly deploy and scale teams of any size.</p>
+             </div>
+             <div class="bg-brand-bg/50 backdrop-blur-md border border-white/5 rounded-3xl p-8 hover:bg-white/5 transition-colors duration-500">
+               <h3 class="font-space text-xl font-bold text-white uppercase mb-3">24/7 Redundancy</h3>
+               <p class="font-inter text-white/50 text-sm leading-relaxed">Our multi-continent presence acts as an interconnected web, ensuring guaranteed uptime, robust disaster recovery, and continuous global operations.</p>
+             </div>
+             <div class="bg-brand-bg/50 backdrop-blur-md border border-white/5 rounded-3xl p-8 hover:bg-white/5 transition-colors duration-500">
+               <h3 class="font-space text-xl font-bold text-white uppercase mb-3">Cultural Alignment</h3>
+               <p class="font-inter text-white/50 text-sm leading-relaxed">Operating natively within distinct global regions allows us to provide localized nuance, language proficiency, and uncompromised quality.</p>
+             </div>
+          </div>
+          
+          <p class="font-inter text-white/50 text-lg max-w-2xl mx-auto leading-relaxed relative z-10 mb-12 font-light hidden md:block">
+            Our strategic locations allow us to pull from the deepest global talent pools, ensuring our clients receive world-class problem solving without geographical limitations. We don't just bridge gaps, we eliminate them entirely.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-6 relative z-10 justify-center">
+            <a href="contact.html" class="hoverable font-space text-sm uppercase tracking-widest bg-white text-black px-12 py-5 rounded-full hover:bg-brand-blue hover:text-white transition-all duration-300 font-bold shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:scale-105 active:scale-95">
+              Partner With Us Globally
+            </a>
+            <a href="about.html" class="hoverable font-space text-sm uppercase tracking-widest bg-transparent border border-white/20 text-white px-12 py-5 rounded-full hover:bg-white/10 transition-all duration-300 font-bold">
+              Read Our Story
+            </a>
+          </div>
+       </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-24 px-4 sm:px-8 border-t border-white/10 relative z-20 bg-brand-bg overflow-hidden">
+    <div
+      class="absolute top-0 left-0 w-full overflow-hidden opacity-5 pointer-events-none select-none flex justify-center">
+      <span class="font-space font-bold text-[15vw] leading-none whitespace-nowrap">INTELEGENCIA</span>
+    </div>
+    <div class="max-w-350 mx-auto relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-32">
+        <div class="lg:col-span-4">
+          <a href="index.html" class="font-space text-3xl font-bold tracking-widest uppercase block mb-6">
+            INTELEGENCIA<span class="text-brand-pink">.</span>
+          </a>
+          <p class="font-inter text-white/50 text-sm mb-12 uppercase tracking-widest max-w-50">
+            Delivering Excellence Across the Globe
+          </p>
+          <div class="space-y-8 font-inter text-sm text-white/60">
+            <div>
+              <h4
+                class="text-white font-space uppercase tracking-widest text-xs mb-3 border-b border-white/10 pb-2 inline-block w-full">
+                U.S.A.</h4>
+              <p>PH 40 West Evergreen Ave,<br />Suite 101A, Philadelphia, PA 19118</p>
+            </div>
+            <div>
+              <h4
+                class="text-white font-space uppercase tracking-widest text-xs mb-3 border-b border-white/10 pb-2 inline-block w-full">
+                INDIA</h4>
+              <p class="mb-4">A-21, Lohia Rd, A Block, Sector 63,<br />Noida, Uttar Pradesh 201301</p>
+              <p>KTC Illumination, First Floor, Gafoor Nagar,<br />Madhapur, Hyderabad, Telangana 500081</p>
+            </div>
+            <div>
+              <h4
+                class="text-white font-space uppercase tracking-widest text-xs mb-3 border-b border-white/10 pb-2 inline-block w-full">
+                PHILIPPINES</h4>
+              <p class="mb-3">OTC Building, Sumulong Highway,<br />Antipolo City, Rizal 1870</p>
+              <p class="mb-3">ECC Building, Matatalaib,<br />Tarlac City, Philippines 2300</p>
+              <p>Exquadra Tower, Jade drive,<br />Ortigas, Pasig City, 1603</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Company</h4>
+            <ul class="space-y-3 font-inter text-sm text-white/50">
+              <li><a href="index.html" class="hover:text-white transition-colors hoverable">Home</a></li>
+              <li><a href="blog.html" class="hover:text-white transition-colors hoverable">Blogs</a></li>
+              <li><a href="case-studies.html" class="hover:text-white transition-colors hoverable">Case Studies</a></li>
+              <li><a href="services.html" class="hover:text-white transition-colors hoverable">Services</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">About Us</h4>
+            <ul class="space-y-3 font-inter text-sm text-white/50">
+              <li><a href="about.html" class="hover:text-white transition-colors hoverable">Our Story</a></li>
+              <li><a href="location.html" class="hover:text-white transition-colors hoverable text-white font-bold group relative block">
+                   Our Location
+                 </a>
+              </li>
+              <li><a href="leadership.html" class="hover:text-white transition-colors hoverable">Our Leadership</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Explore</h4>
+            <ul class="space-y-3 font-inter text-sm text-white/50">
+              <li><a href="career.html" class="hover:text-white transition-colors hoverable">Career</a></li>
+              <li><a href="culture.html" class="hover:text-white transition-colors hoverable">Our Culture</a></li>
+              <li><a href="privacy.html" class="hover:text-white transition-colors hoverable">Privacy Policy</a></li>
+              <li><a href="disclaimer.html" class="hover:text-white transition-colors hoverable">Disclaimer</a></li>
+              <li><a href="cookie-policy.html" class="hover:text-white transition-colors hoverable">Cookie Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-space uppercase tracking-widest text-xs mb-6">Engagement</h4>
+            <ul class="space-y-3 font-inter text-sm text-white/50 leading-relaxed">
+              <li><a href="services.html" class="hover:text-white transition-colors hoverable">App & Engineering</a>
+              </li>
+              <li><a href="services.html" class="hover:text-white transition-colors hoverable">Digital Marketing</a>
+              </li>
+              <li><a href="services.html" class="hover:text-white transition-colors hoverable">Customer Service &
+                  BPO</a></li>
+              <!-- Removed Legal Link -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center text-white/30 text-xs font-space tracking-widest uppercase">
+        <p>© 2026 INTELEGENCIA TECHNOLOGIES CORPORATION. ALL RIGHTS RESERVED.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0 items-center">
+          <a href="#" class="hoverable hover:text-white transition-colors">TWITTER</a>
+          <a href="#" class="hoverable hover:text-white transition-colors">LINKEDIN</a>
+          <a href="#" class="hoverable hover:text-white transition-colors">FACEBOOK</a>
+          <a href="#" class="hoverable hover:text-white transition-colors">INSTAGRAM</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.set(".text-reveal-block", { opacity: 0, y: 50 });
+      gsap.set(".section-reveal", { opacity: 0, y: 30 });
+
+      gsap.to(".text-reveal-block", {
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        ease: "power4.out",
+        delay: 0.2,
+      });
+
+      const sections = document.querySelectorAll(".section-reveal");
+      sections.forEach((section) => {
+        gsap.fromTo(
+          section,
+          { opacity: 0, y: 30 },
+          {
+            scrollTrigger: {
+              trigger: section,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power3.out",
+          }
+        );
+      });
+    });
+  </script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
