@@ -84,116 +84,47 @@
 
     <main>
       <!-- Hero Section -->
-      <section class="relative h-screen flex flex-col justify-between overflow-hidden">
-        <div id="three-canvas" class="absolute inset-0 z-0 opacity-70"></div>
-
+      <section class="relative h-screen flex flex-col justify-between items-center overflow-hidden">
         <div
-          class="absolute inset-0 z-0 pointer-events-none opacity-[0.05]"
-          style="
-            background-image:
-              linear-gradient(var(--color-white) 1px, transparent 1px),
-              linear-gradient(90deg, var(--color-white) 1px, transparent 1px);
-            background-size: 50px 50px;
-            background-position: center;
-          "
-        ></div>
-        <div class="absolute left-[5%] md:left-[10%] top-0 w-px h-full bg-white/10 z-0 hidden sm:block"></div>
-        <div class="absolute right-[5%] md:right-[10%] top-0 w-px h-full bg-white/10 z-0 hidden sm:block"></div>
-
-        <div
-          class="absolute top-32 left-8 md:left-[12%] z-10 glass px-4 py-3 border-l-2 border-brand-pink rounded-r-md hidden md:flex items-center space-x-4 backdrop-blur-md bg-brand-bg/80"
+          class="relative z-10 w-full px-4 sm:px-8 max-w-350 mx-auto flex flex-col justify-center items-center h-full pointer-events-none pb-20 mt-16"
         >
-          <span class="relative flex h-3 w-3">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-pink opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-pink"></span>
-          </span>
-          <span class="font-space text-xs tracking-[0.2em] text-white/90 uppercase">System Active: Core Logic</span>
-        </div>
-
-        <div
-          class="absolute bottom-48 right-8 md:right-[12%] z-10 glass p-6 border-t-2 border-t-brand-blue rounded-b-md hidden lg:flex flex-col backdrop-blur-md bg-brand-bg/80 border-r border-l border-white/5 max-w-xs text-right"
-        >
-          <span class="font-space text-brand-blue text-4xl font-bold tracking-tighter">99.9%</span>
-          <span class="font-space font-bold text-xs text-white/70 tracking-[0.3em] uppercase mt-2">
-            Uptime SLA Guaranteed
-          </span>
-          <p class="font-inter text-xs text-white/40 mt-4 leading-relaxed border-t border-white/10 pt-4">
-            Pioneering robust infrastructures optimized for absolute stability under massive load.
-          </p>
-        </div>
-
-        <div
-          class="relative z-10 w-full px-4 sm:px-8 max-w-350 mx-auto flex flex-col justify-center h-full pointer-events-none pb-20 mt-16"
-        >
-          <div class="perspective-1000 w-full mb-8 relative">
+          <div
+            class="px-4 py-3 border-l-2 border-brand-pink rounded-r-md flex items-center space-x-4 backdrop-blur-md bg-brand-bg/80 w-fit"
+          >
+            <span class="relative flex h-3 w-3">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-pink opacity-75"
+              ></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-pink"></span>
+            </span>
+            <span class="font-space text-xs tracking-[0.2em] text-white/90 uppercase">System Active: Core Logic</span>
+          </div>
+          <div class="perspective-1000 mb-8 relative w-fit mt-10">
             <div
               class="absolute -top-16 -left-8 md:-left-20 font-space text-[8rem] md:text-[18rem] leading-none text-white/2 pointer-events-none select-none z-0"
             >
               01
             </div>
             <h1
-              class="brutalist-title font-space font-bold uppercase tracking-tighter text-[16vw] lg:text-[11vw] leading-[0.85] text-white mix-blend-overlay mx-auto text-center md:text-left drop-shadow-[0_20px_50px_rgba(255,0,110,0.5)] relative z-10"
+              class="brutalist-title font-space font-bold uppercase text-[16vw] lg:text-[11vw] leading-[0.85] text-white mix-blend-overlay mx-auto text-center md:text-left relative z-10"
             >
               CRAFTING
               <br />
-              <span
-                class="text-transparent bg-clip-text bg-linear-to-r from-brand-purple via-white/80 to-brand-blue stroke-white webkit-text-stroke relative"
-              >
-                CULTURE
-                <svg
-                  class="absolute -right-16 -top-16 w-32 h-32 text-brand-pink opacity-50 hidden md:block animate-[spin_15s_linear_infinite]"
-                  viewBox="0 0 100 100"
-                  fill="none"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    d="M50 0v100M0 50h100 M15 15l70 70 M15 85l70-70 M50 25c13.8 0 25 11.2 25 25s-11.2 25-25 25-25-11.2-25-25 11.2-25 25-25z"
-                  />
-                </svg>
-              </span>
+              <span class="text-[#890207] relative italic">"CULTURE"</span>
             </h1>
           </div>
-
           <div
-            class="w-full mt-12 flex justify-between items-end flex-col md:flex-row gap-8 pl-0 md:pl-[10%] pr-0 md:pr-[10%] relative z-10"
+            class="w-fit mt-12 flex justify-between items-end flex-col md:flex-row gap-8 pl-0 md:pl-[10%] pr-0 md:pr-[10%] relative z-10 text-center"
           >
-            <div
-              class="border-l-4 border-brand-purple pl-6 bg-brand-bg/30 backdrop-blur-sm p-4 hidden md:block rounded-r-xl"
-            >
+            <div class="border-x-4 border-brand-purple pl-6 bg-brand-bg/30 backdrop-blur-sm p-4 block">
               <p
                 class="hero-subtitle font-inter text-lg md:text-xl text-white max-w-lg tracking-wide leading-relaxed font-light"
               >
                 A high-end engineering & digital production house building state-of-the-art enterprise solutions.
               </p>
             </div>
-            <div class="border-l-4 border-brand-purple pl-6 md:hidden">
-              <p
-                class="hero-subtitle font-inter text-lg md:text-xl text-white max-w-lg tracking-wide leading-relaxed font-light"
-              >
-                A high-end engineering & digital production house building state-of-the-art enterprise solutions.
-              </p>
-            </div>
-
-            <!-- Scroll element moved to bottom center -->
           </div>
         </div>
-
-        <!-- Scroll Indicator absolute bottom center -->
-        <div
-          class="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-30 hidden md:flex flex-col items-center gap-3 text-[10px] font-space tracking-[0.3em] text-white/50 backdrop-blur-md bg-brand-bg/80 border border-white/5 px-6 py-4 rounded-xl shadow-[0_0_15px_rgba(0,0,0,0.5)]"
-        >
-          <span class="text-brand-blue font-bold text-center">SYS.SCROLL_INIT();</span>
-          <svg class="w-5 h-5 animate-bounce text-white/80 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            ></path>
-          </svg>
-        </div>
-
         <div
           class="absolute bottom-0 left-0 w-full h-14 bg-brand-bg/80 border-t border-b border-white/10 flex items-center overflow-hidden z-20 backdrop-blur-xl"
         >
@@ -1035,7 +966,9 @@
                 <li><a href="culture.html" class="hover:text-white transition-colors hoverable">Our Culture</a></li>
                 <li><a href="privacy.html" class="hover:text-white transition-colors hoverable">Privacy Policy</a></li>
                 <li><a href="disclaimer.html" class="hover:text-white transition-colors hoverable">Disclaimer</a></li>
-                <li><a href="cookie-policy.html" class="hover:text-white transition-colors hoverable">Cookie Policy</a></li>
+                <li>
+                  <a href="cookie-policy.html" class="hover:text-white transition-colors hoverable">Cookie Policy</a>
+                </li>
               </ul>
             </div>
             <div>

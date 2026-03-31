@@ -5,26 +5,26 @@
   --color-brand-surface: var(--theme-surface);
   --color-white: var(--theme-white);
   --color-black: var(--theme-black);
-  
-  --color-brand-purple: #9D4EDD;
-  --color-brand-pink: #FF006E;
-  --color-brand-blue: #3A86FF;
-  
+
+  --color-brand-purple: #cb2f2f;
+  --color-brand-pink: #ff006e;
+  --color-brand-blue: #3a86ff;
+
   --font-space: "Space Grotesk", sans-serif;
   --font-inter: "Inter", sans-serif;
 }
 
 @layer base {
-  :root { 
+  :root {
     /* Light Mode */
     color-scheme: light;
     --theme-bg: #f8f9fa;
     --theme-surface: #ffffff;
-    --theme-white: #0a0a0a;  /* Core utilities like text-white invert to dark */
-    --theme-black: #ffffff;  /* Core utilities like bg-black invert to light */
+    --theme-white: #0a0a0a; /* Core utilities like text-white invert to dark */
+    --theme-black: #ffffff; /* Core utilities like bg-black invert to light */
   }
-  
-  :root.dark { 
+
+  :root.dark {
     /* Dark Mode Defaults */
     color-scheme: dark;
     --theme-bg: #070707;
@@ -70,7 +70,10 @@
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+  transition:
+    width 0.3s ease,
+    height 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .dark .custom-cursor {
@@ -89,12 +92,12 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-brand-bg); 
+  background: var(--color-brand-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: #333; 
+  background: #333;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
