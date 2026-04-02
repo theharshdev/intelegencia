@@ -42,7 +42,7 @@
 }
 
 .text-gradient {
-  @apply bg-gradient-to-r from-[var(--color-brand-purple)] via-[var(--color-brand-pink)] to-[var(--color-brand-blue)] bg-clip-text text-transparent;
+  @apply bg-linear-to-r from-brand-purple via-brand-pink to-brand-blue bg-clip-text text-transparent;
 }
 
 /* Noise overlay */
